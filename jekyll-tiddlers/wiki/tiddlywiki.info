@@ -1,0 +1,17 @@
+{
+  "description": "Jekyll Tiddlers",
+  "plugins": [
+    "jorgebg/github",
+    "tiddlywiki/codemirror",
+    "tiddlywiki/highlight"
+  ],
+  "themes": [
+    "tiddlywiki/vanilla",
+    "tiddlywiki/snowwhite"
+  ],
+  "build": {
+    "index": [
+      "--rendertiddler", "$:/core/save/all", "index.html", "text/plain"
+    ]
+  }
+}

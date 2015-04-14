@@ -1,0 +1,22 @@
+---
+---
+[
+{% for tiddly in site.tiddlers %}
+  {% capture cache %}
+  {% for field in tiddly %}
+    {% unless site.collections.tiddlers.exclude_fields contains field[0] %}
+      {% capture keys %}{% if keys %}{{ keys }},{% endif %}{{ field[0]}}{% endcapture %}
+    {% endunless %}
+  {% endfor %}
+  {% assign keys = keys|split:"," %}
+  {% endcapture %}
+  {% assign cache=nil %}
+  {
+    {% for key in keys|split:"," %}
+    {% capture value %}{{ tiddly[key] }}{% endcapture %}{{ key | jsonify }}: {{ value | jsonify }}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  }{% unless forloop.last %},{% endunless %}
+  {% assign keys=nil %}
+{% endfor %}
+
+]

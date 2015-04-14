@@ -1,0 +1,4 @@
+{
+  {% for field in page %}{% unless site.collections.tiddlers.exclude_fields contains field[0] %}{{ field[0] | jsonify }}: {% capture value %}{{ field[1] }}{% endcapture %}{{ value | jsonify }},
+  {% endunless %}{% endfor %}"text": {{content|jsonify}}
+}

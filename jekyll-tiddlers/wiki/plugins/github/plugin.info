@@ -1,0 +1,7 @@
+{
+  "title": "$:/plugins/jorgebg/github",
+  "description": "Github Pages sync adaptor",
+  "author": "Jorge Barata",
+  "core-version": ">=5.0.0",
+  "list": "readme"
+}

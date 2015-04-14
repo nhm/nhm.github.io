@@ -1,0 +1,5 @@
+title: $:/plugins/jorgebg/github/readme
+
+This plugin runs in the browser to synchronise tiddler changes to and from a Github Pages hosted static site built with Jekyll.
+
+[[Source code|https://github.com/jorgebg/jekyll-tiddlers/blob/master/plugins/github]]
