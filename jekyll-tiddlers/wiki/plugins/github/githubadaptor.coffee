@@ -111,11 +111,9 @@ class GithubAdaptor
         callback null, null, res.sha
 
     file.fetch (err, res) =>
-      if err?.statusCode is 404
+      if err
         message = "Create tiddler: #{title}"
         save {message, content}
-      else if err
-        return callback err
       else
         message: "Save tiddler: #{title}"
         save {message, content, sha: res.sha}
