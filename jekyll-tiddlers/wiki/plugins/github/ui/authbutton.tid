@@ -1,0 +1,14 @@
+title: $:/core/ui/Buttons/github-auth
+tags: $:/tags/PageControls
+caption: {{$:/plugins/jorgebg/github/img/github.svg}} Login
+description: Authenticate with GitHub OAuth
+
+<$button tooltip="Authenticate with GitHub OAuth" class=<<tv-config-toolbar-class>>>
+<$action-githubauth/>
+<$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
+{{$:/plugins/jorgebg/github/img/github.svg}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>prefix[yes]]">
+<span class="tc-btn-text"><$text text="Login"/></span>
+</$list>
+</$button>

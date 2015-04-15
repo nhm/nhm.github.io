@@ -1,0 +1,3 @@
+title: $:/language/Notifications/Github/Auth
+
+Authentication successful. Welcome back ''#{{$:/status/UserName}}''.

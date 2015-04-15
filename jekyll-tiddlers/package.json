@@ -1,0 +1,12 @@
+{
+  "name": "jekyll-tiddlers",
+  "version": "0.0.1",
+  "description": "TiddlyWiki and Jekyll together",
+  "author": "Jorge Barata",
+  "license": "MIT",
+  "dependencies": {
+    "tiddlywiki": ">=5.1.7",
+    "coffee-script": ">=1.9.1"
+  },
+  "repository": "git@github.com:jorgebg/jekyll-tiddlers.git"
+}
