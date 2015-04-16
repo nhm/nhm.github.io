@@ -2,11 +2,9 @@
 created: '20110419084725'
 modified: '20110419084725'
 title: FreeCiv
-type: text/html
-post_format: Link
-tags: Games
+tags: '[[Games]] [[Link]]'
 ---
 
-<a href="http://www.freeciv.net/">http://www.freeciv.net/</a>
+[[http://www.freeciv.net/|http://www.freeciv.net/]]
 
 multiplayer strategy game playable online with a HTML5 browser

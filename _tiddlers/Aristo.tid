@@ -2,11 +2,9 @@
 created: '20110805152733'
 modified: '20110805152733'
 title: Aristo
-type: text/html
-post_format: Link
-tags: Web jquery jquery-ui theme
+tags: '[[Web]] [[Link]] [[jquery]] [[jquery-ui]] [[theme]]'
 ---
 
-<a href="https://github.com/taitems/Aristo-jQuery-UI-Theme">taitems/Aristo-jQuery-UI-Theme - GitHub</a>
+[[taitems/Aristo-jQuery-UI-Theme - GitHub|https://github.com/taitems/Aristo-jQuery-UI-Theme]]
 
 The "Aristo" theme for Cappuccino ported to a jQuery UI Theme.

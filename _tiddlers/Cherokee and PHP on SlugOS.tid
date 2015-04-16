@@ -2,107 +2,272 @@
 created: '20100209103642'
 modified: '20100209103642'
 title: Cherokee and PHP on SlugOS
-type: text/html
-tags: NSLU2
+tags: '[[NSLU2]]'
 ---
 
-<h2><a id="sources" name="sources">
-Sources</a></h2>
-<div class="level2">
-<ul>
-	<li class="level1">
-<div class="li"><a class="urlextern" title="http://www.nslu2-linux.org/wiki/SlugOS/InstallandTurnupABasicSlugOSSystem" rel="nofollow" href="http://www.nslu2-linux.org/wiki/SlugOS/InstallandTurnupABasicSlugOSSystem">http://www.nslu2-linux.org/wiki/SlugOS/InstallandTurnupABasicSlugOSSystem</a></div></li>
-	<li class="level1">
-<div class="li"><a class="urlextern" title="http://barracudadrive.net/slugos-for-dummies.html" rel="nofollow" href="http://barracudadrive.net/slugos-for-dummies.html">http://barracudadrive.net/slugos-for-dummies.html</a></div></li>
-	<li class="level1">
-<div class="li"><a class="urlextern" title="http://www.boristheengineer.co.uk/slug/cherokee_web_server.htm" rel="nofollow" href="http://www.boristheengineer.co.uk/slug/cherokee_web_server.htm">http://www.boristheengineer.co.uk/slug/cherokee_web_server.htm</a></div></li>
-	<li class="level1">
-<div class="li"><a class="urlextern" title="http://www.ambor.com/public/nslu2hack/nslu2hack.html" rel="nofollow" href="http://www.ambor.com/public/nslu2hack/nslu2hack.html">http://www.ambor.com/public/nslu2hack/nslu2hack.html</a></div></li>
-	<li class="level1">
-<div class="li"><a class="urlextern" title="http://unslung.blogspot.com/2008/08/web-server-install-part-one.html" rel="nofollow" href="http://unslung.blogspot.com/2008/08/web-server-install-part-one.html">http://unslung.blogspot.com/2008/08/web-server-install-part-one.html</a></div></li>
-	<li class="level1">
-<div class="li"><a class="urlextern" title="http://www.cherokee-project.com/doc/config_quickstart.html" rel="nofollow" href="http://www.cherokee-project.com/doc/config_quickstart.html">http://www.cherokee-project.com/doc/config_quickstart.html</a></div></li>
-	<li class="level1">
-<div class="li"><a class="urlextern" title="http://www.cherokee-project.com/doc/cookbook_php.html" rel="nofollow" href="http://www.cherokee-project.com/doc/cookbook_php.html">http://www.cherokee-project.com/doc/cookbook_php.html</a></div></li>
-</ul>
+## 
+Sources
+
+
+
+
+
+
+
+
+	
+  * 
+
+
+[[http://www.nslu2-linux.org/wiki/SlugOS/InstallandTurnupABasicSlugOSSystem|http://www.nslu2-linux.org/wiki/SlugOS/InstallandTurnupABasicSlugOSSystem]]
+
+
+	
+  * 
+
+
+[[http://barracudadrive.net/slugos-for-dummies.html|http://barracudadrive.net/slugos-for-dummies.html]]
+
+
+	
+  * 
+
+
+[[http://www.boristheengineer.co.uk/slug/cherokee_web_server.htm|http://www.boristheengineer.co.uk/slug/cherokee_web_server.htm]]
+
+
+	
+  * 
+
+
+[[http://www.ambor.com/public/nslu2hack/nslu2hack.html|http://www.ambor.com/public/nslu2hack/nslu2hack.html]]
+
+
+	
+  * 
+
+
+[[http://unslung.blogspot.com/2008/08/web-server-install-part-one.html|http://unslung.blogspot.com/2008/08/web-server-install-part-one.html]]
+
+
+	
+  * 
+
+
+[[http://www.cherokee-project.com/doc/config_quickstart.html|http://www.cherokee-project.com/doc/config_quickstart.html]]
+
+
+	
+  * 
+
+
+[[http://www.cherokee-project.com/doc/cookbook_php.html|http://www.cherokee-project.com/doc/cookbook_php.html]]
+
+
+
 After all I installed Dokuwiki…
-<ul>
-	<li class="level1">
-<div class="li"><a class="urlextern" title="http://mybookworld.wikidot.com/dokuwiki" rel="nofollow" href="http://mybookworld.wikidot.com/dokuwiki">http://mybookworld.wikidot.com/dokuwiki</a></div></li>
-</ul>
-</div>
-<div class="secedit"><form class="button btn_secedit" action="/dokuwiki/doku.php" method="post">
-<div class="no" style="text-align: center;"><span style="font-family: Arial;"><span style="line-height: normal; white-space: pre;">
-</span></span></div>
-</form></div>
-<h2><a id="install-slugos" name="install-slugos">1. Install SlugOS</a></h2>
-<div class="level2">
+
+	
+  * 
+
+
+[[http://mybookworld.wikidot.com/dokuwiki|http://mybookworld.wikidot.com/dokuwiki]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 1. Install SlugOS
+
+
+
+
+
 
 First you need to install SlugOS. Follow these steps:
-<a class="urlextern" title="http://www.nslu2-linux.org/wiki/SlugOS/InstallandTurnupABasicSlugOSSystem" rel="nofollow" href="http://www.nslu2-linux.org/wiki/SlugOS/InstallandTurnupABasicSlugOSSystem"> Install and turn up a basic SlugOS system</a>
+[[ Install and turn up a basic SlugOS system|http://www.nslu2-linux.org/wiki/SlugOS/InstallandTurnupABasicSlugOSSystem]]
 
-</div>
-<div class="secedit"><form class="button btn_secedit" action="/dokuwiki/doku.php" method="post">
-<div class="no" style="text-align: center;"><span style="font-family: Arial;"><span style="line-height: normal; white-space: pre;">
-</span></span></div>
-</form></div>
-<h3><a id="install-php" name="install-php">2. Install PHP</a></h3>
-<div class="level3">
-<pre class="code |sh">ipkg install php-fcgi</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 2. Install PHP
+
+
+
+
+
+
+    
+    ipkg install php-fcgi
+
+
 Reboot!
 
-</div>
-<div class="secedit"><form class="button btn_secedit" action="/dokuwiki/doku.php" method="post">
-<div class="no" style="text-align: center;"><span style="font-family: Arial;"><span style="line-height: normal; white-space: pre;">
-</span></span></div>
-</form></div>
-<h3><a id="install-cherokee-web-server" name="install-cherokee-web-server">3. Install Cherokee Web Server</a></h3>
-<div class="level3">
-<pre class="code |sh">ipkg install cherokee
-ipkg install cherokee-admin</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 3. Install Cherokee Web Server
+
+
+
+
+
+
+    
+    ipkg install cherokee
+    ipkg install cherokee-admin
+
+
 Reboot!
 
-</div>
-<div class="secedit"><form class="button btn_secedit" action="/dokuwiki/doku.php" method="post">
-<div class="no" style="text-align: center;"><span style="font-family: Arial;"><span style="line-height: normal; white-space: pre;">
-</span></span></div>
-</form></div>
-<h3><a id="configure-them-all" name="configure-them-all">4. Configure Them All!</a></h3>
-<h4><a id="link-php-cgi" name="link-php-cgi">4.1 Link php-cgi</a></h4>
-<div class="level4">
 
-We need to do a link from /opt/bin/php-fcgi to /opt/bin/php-cgi (<a class="urlextern" title="http://www.cherokee-project.com/doc/cookbook_php.html#php_fastcgi" rel="nofollow" href="http://www.cherokee-project.com/doc/cookbook_php.html#php_fastcgi">why?</a>):
-<pre class="code |sh">ln /opt/bin/php-fcgi /opt/bin/php-cgi</pre>
-</div>
-<h4><a id="give-logs-to-cherokee" name="give-logs-to-cherokee">4.2 Give logs to cherokee</a></h4>
-<div class="level4">
-<pre class="code |sh">chown www-data:www-data /opt/var/log/cherokee.error
-chown www-data:www-data /opt/var/log/cherokee.access</pre>
-</div>
-<h4><a id="register-cherokee-on-startup" name="register-cherokee-on-startup">4.3 Register Cherokee on startup</a></h4>
-<div class="level4">
-<pre class="code |sh">cp /opt/etc/init.d/S80cherokee /etc/init.d/cherokee
-update-rc.d cherokee defaults</pre>
-</div>
-<h4><a id="cherokee-admin" name="cherokee-admin">4.4 Cherokee Admin!</a></h4>
-<div class="level4">
 
-Source: <a class="urlextern" title="http://www.cherokee-project.com/doc/config_quickstart.html" rel="nofollow" href="http://www.cherokee-project.com/doc/config_quickstart.html">Cherokee Config Quickstart</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 4. Configure Them All!
+
+
+
+
+#### 4.1 Link php-cgi
+
+
+
+
+
+
+We need to do a link from /opt/bin/php-fcgi to /opt/bin/php-cgi ([[why?|http://www.cherokee-project.com/doc/cookbook_php.html#php_fastcgi]]):
+
+    
+    ln /opt/bin/php-fcgi /opt/bin/php-cgi
+
+
+
+
+
+
+
+#### 4.2 Give logs to cherokee
+
+
+
+
+
+
+    
+    chown www-data:www-data /opt/var/log/cherokee.error
+    chown www-data:www-data /opt/var/log/cherokee.access
+
+
+
+
+
+
+
+#### 4.3 Register Cherokee on startup
+
+
+
+
+
+
+    
+    cp /opt/etc/init.d/S80cherokee /etc/init.d/cherokee
+    update-rc.d cherokee defaults
+
+
+
+
+
+
+
+#### 4.4 Cherokee Admin!
+
+
+
+
+
+
+Source: [[Cherokee Config Quickstart|http://www.cherokee-project.com/doc/config_quickstart.html]]
 
 Launch it!
-<pre class="code |sh">cherokee-admin -b</pre>
+
+    
+    cherokee-admin -b
+
+
 Copy the password, go to your favorite browser and type localhost:9090. Login as “admin” with the given password.
 
 Go to General→Server Permissions and set both User and Group to www-data.
 
 Save, restart your server and…
 
-<strong><acronym title="Hypertext Preprocessor">PHP</acronym>-FCGI</strong>
+''PHP-FCGI''
 
-Source: <a class="urlextern" title="http://www.cherokee-project.com/doc/cookbook_php.html" rel="nofollow" href="http://www.cherokee-project.com/doc/cookbook_php.html">Cherokee Cookbook: PHP</a>
+Source: [[Cherokee Cookbook: PHP|http://www.cherokee-project.com/doc/cookbook_php.html]]
 
-Go to Virtual Servers→Default and click in Wizards. Now select Languages and run the <acronym title="Hypertext Preprocessor">PHP</acronym> wizard.
-<div class="notetip">In Rules, add index.php to the index pages (index.html is set by default, you should have “index.html;index.php”)</div>
+Go to Virtual Servers→Default and click in Wizards. Now select Languages and run the PHP wizard.
+
+
+In Rules, add index.php to the index pages (index.html is set by default, you should have “index.html;index.php”)
+
+
 That's all!
 
-</div>
+

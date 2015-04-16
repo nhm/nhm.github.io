@@ -2,11 +2,9 @@
 created: '20110720160229'
 modified: '20110720160229'
 title: Textile markup language for Ruby
-type: text/html
-post_format: Link
-tags: Ruby textile
+tags: '[[Ruby]] [[Link]] [[textile]]'
 ---
 
-<a href="http://redcloth.org/">RedCloth - Textile markup language for Ruby</a>
+[[RedCloth - Textile markup language for Ruby|http://redcloth.org/]]
 
 RedCloth is a module for using the Textile markup language in Ruby

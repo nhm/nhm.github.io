@@ -2,11 +2,9 @@
 created: '20110423111950'
 modified: '20110423111950'
 title: reCAPTCHA Mailhide
-type: text/html
-post_format: Link
-tags: Security
+tags: '[[Security]] [[Link]]'
 ---
 
-<a href="http://www.google.com/recaptcha/mailhide/">reCAPTCHA Mailhide: Free Spam Protection</a>
+[[reCAPTCHA Mailhide: Free Spam Protection|http://www.google.com/recaptcha/mailhide/]]
 
 reCAPTCHA Mailhide helps you protect your inbox by asking people to solve a reCAPTCHA before they can view your email address.

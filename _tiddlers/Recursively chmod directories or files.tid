@@ -2,16 +2,15 @@
 created: '20100312155701'
 modified: '20100312155701'
 title: Recursively chmod directories or files
-type: text/html
-tags: Unix chmod only recursively
+tags: '[[Unix]] [[chmod]] [[only]] [[recursively]]'
 ---
 
 Only directories:
 
-<code>find . -type d -exec chmod 755 {} ;</code>
+`find . -type d -exec chmod 755 {} ;`
 
 Only files:
 
-<code>find . -type f -exec chmod 644 {} ;</code>
+`find . -type f -exec chmod 644 {} ;`
 
-via <a href="http://movabletripe.com/archive/recursively-chmod-directories-only/">/dev/movabletripe » Recursively chmod directories only</a>.
+via [[/dev/movabletripe » Recursively chmod directories only|http://movabletripe.com/archive/recursively-chmod-directories-only/]].

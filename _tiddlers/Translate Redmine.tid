@@ -2,46 +2,97 @@
 created: '20110410161215'
 modified: '20110410161215'
 title: Translate Redmine
-type: text/html
-tags: Development Ruby redmine
+tags: '[[Development]] [[Ruby]] [[redmine]]'
 ---
 
-<span style="color: #484848; font-family: Verdana, sans-serif; font-size: 12px; line-height: normal;">Redmine can easily be translated in any language.</span>
+Redmine can easily be translated in any language.
 
 There are a few things to translate:
-<ol>
-	<li><strong>The main lang file, located at <a class="source" style="color: #116699; text-decoration: none;" href="http://www.redmine.org/projects/redmine/repository/entry/trunk/config/locales">source:/trunk/config/locales</a> in current trunk</strong></li>
-	<li>The calendar lang file, located in <a class="source" style="color: #116699; text-decoration: none;" href="http://www.redmine.org/projects/redmine/repository/entry/trunk/public/javascripts/calendar/lang">source:trunk/public/javascripts/calendar/lang</a></li>
-	<li>The wiki toolbar lang file, located in <a class="source" style="color: #116699; text-decoration: none;" href="http://www.redmine.org/projects/redmine/repository/entry/trunk/public/javascripts/jstoolbar/lang">source:trunk/public/javascripts/jstoolbar/lang</a></li>
-</ol>
-<h2>Example</h2>
-Say you want to translate Redmine in Finnish (<code>fi</code> as defined in the <a class="external" style="color: #116699; text-decoration: none; padding-left: 12px; background-image: url(http://www.redmine.org/images/external.png); background-position: 0% 60%; background-repeat: no-repeat no-repeat;" href="http://www.iana.org/assignments/language-subtag-registry">IANA Language Subtag Registry</a>):
-<ol>
-	<li>Copy <code>/config/locales/en.yml</code> to <code>/config/locales/fi.yml</code>.</li>
-	<li>Copy <code>/public/javascripts/calendar/lang/calendar-en.js</code> to <code>/public/javascripts/calendar/lang/calendar-fi.js</code>.</li>
-	<li>Copy <code>/public/javascripts/jstoolbar/lang/jstoolbar-en.js</code> to <code>/public/javascripts/jstoolbar/lang/jstoolbar-fi.js</code>.</li>
-	<li>Translate every string in these files.</li>
-	<li>Test your translation with command
-<pre style="margin-top: 1em; margin-right: 1em; margin-bottom: 1em; margin-left: 1.6em; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 0px; background-color: #fafafa; width: auto; overflow-x: auto; overflow-y: hidden; border: 1px solid #dadada;">rake test</pre>
-If you get errors related to locales, you must fix them.</li>
-	<li>Submit your translation <a class="external" style="color: #116699; text-decoration: none; padding-left: 12px; background-image: url(http://www.redmine.org/images/external.png); background-position: 0% 60%; background-repeat: no-repeat no-repeat;" href="http://www.redmine.org/projects/redmine/issues/new?tracker_id=3">here</a> (as plain file or patch, login required). Select "Translation" in Category listbox.</li>
-	<li>Wait until your Issue will be fixed.</li>
-	<li>Enjoy your work :)</li>
-	<li>GOTO 4 if needed.</li>
-</ol>
-<h2>Restrictions</h2>
+
+
+
+	
+  1. ''The main lang file, located at [[source:/trunk/config/locales|http://www.redmine.org/projects/redmine/repository/entry/trunk/config/locales]] in current trunk''
+
+	
+  2. The calendar lang file, located in [[source:trunk/public/javascripts/calendar/lang|http://www.redmine.org/projects/redmine/repository/entry/trunk/public/javascripts/calendar/lang]]
+
+	
+  3. The wiki toolbar lang file, located in [[source:trunk/public/javascripts/jstoolbar/lang|http://www.redmine.org/projects/redmine/repository/entry/trunk/public/javascripts/jstoolbar/lang]]
+
+
+
+
+## Example
+
+
+Say you want to translate Redmine in Finnish (`fi` as defined in the [[IANA Language Subtag Registry|http://www.iana.org/assignments/language-subtag-registry]]):
+
+
+
+	
+  1. Copy `/config/locales/en.yml` to `/config/locales/fi.yml`.
+
+	
+  2. Copy `/public/javascripts/calendar/lang/calendar-en.js` to `/public/javascripts/calendar/lang/calendar-fi.js`.
+
+	
+  3. Copy `/public/javascripts/jstoolbar/lang/jstoolbar-en.js` to `/public/javascripts/jstoolbar/lang/jstoolbar-fi.js`.
+
+	
+  4. Translate every string in these files.
+
+	
+  5. Test your translation with command
+
+    
+    rake test
+
+
+If you get errors related to locales, you must fix them.
+
+	
+  6. Submit your translation [[here|http://www.redmine.org/projects/redmine/issues/new?tracker_id=3]] (as plain file or patch, login required). Select "Translation" in Category listbox.
+
+	
+  7. Wait until your Issue will be fixed.
+
+	
+  8. Enjoy your work :)
+
+	
+  9. GOTO 4 if needed.
+
+
+
+
+## Restrictions
+
+
 Do not use HTML entities in translated strings.
 
 Check that your files not have BOM (Byte-order mark). BOM can be removed with command:
-<pre style="margin-top: 1em; margin-right: 1em; margin-bottom: 1em; margin-left: 1.6em; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 0px; background-color: #fafafa; width: auto; overflow-x: auto; overflow-y: hidden; border: 1px solid #dadada;">awk '{if(NR==1)sub(/^\xef\xbb\xbf/, "");print}' &lt; oldfile &gt; newfile</pre>
-As of 2009-02-21, <strong>only updates based on the new translation files</strong> (found in <code>/config/locales</code>) <strong>should be submitted.</strong>
 
-&nbsp;
-<h2 id="Updates-to-the-language-files">Updates to the language files</h2>
-File <code>en.yml</code> acts as the main language file. You can check if it has new strings by running:
-<pre style="margin-top: 1em; margin-right: 1em; margin-bottom: 1em; margin-left: 1.6em; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 0px; background-color: #fafafa; width: auto; overflow-x: auto; overflow-y: hidden; border: 1px solid #dadada;">rake locales:update</pre>
+    
+    awk '{if(NR==1)sub(/^\xef\xbb\xbf/, "");print}' < oldfile > newfile
+
+
+As of 2009-02-21, ''only updates based on the new translation files'' (found in `/config/locales`) ''should be submitted.''
+
+
+
+
+## Updates to the language files
+
+
+File `en.yml` acts as the main language file. You can check if it has new strings by running:
+
+    
+    rake locales:update
+
+
 This copies the new strings to other translation files (with the English translation as default value).
 
-&nbsp;
 
-via <a href="http://www.redmine.org/projects/redmine/wiki/HowTo_translate_Redmine_in_your_own_language">Redmine - HowTo translate Redmine in your own language - Redmine</a>.
+
+via [[Redmine - HowTo translate Redmine in your own language - Redmine|http://www.redmine.org/projects/redmine/wiki/HowTo_translate_Redmine_in_your_own_language]].

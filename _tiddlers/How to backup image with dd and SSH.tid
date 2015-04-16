@@ -2,22 +2,29 @@
 created: '20100206223238'
 modified: '20100206223238'
 title: How to backup image with dd and SSH
-type: text/html
-tags: Unix
+tags: '[[Unix]]'
 ---
 
 Backup:
-<pre name="code">
-ssh user@hostname "dd if=/dev/sda" | gzip -1 - | dd of=/backup.gz
-</pre>
+
+    
+    
+    ssh user@hostname "dd if=/dev/sda" | gzip -1 - | dd of=/backup.gz
+    
+
+
 
 Recover:
-<pre name="code">
-dd if=backup.gz | gunzip -1 - | "dd of=/dev/sda" 
-</pre>
 
-via <a class="fixed" href="http://webcartero02.uc3m.es/horde-3.0.9/services/go.php?url=http%3A%2F%2Fwww.pantz.org%2Fsoftware%2Fdd%2Fdrivecopywithsshanddd.html" target="_blank">http://www.pantz.org/software/dd/drivecopywithsshanddd.html</a>,
-<a class="fixed" href="http://webcartero02.uc3m.es/horde-3.0.9/services/go.php?url=http%3A%2F%2Fkarlherrick.com%2Fdev%2F2008%2F09%2F12%2Fdd-backups-over-ssh%2F" target="_blank">http://karlherrick.com/dev/2008/09/12/dd-backups-over-ssh/</a>,
-<a class="fixed" href="http://webcartero02.uc3m.es/horde-3.0.9/services/go.php?url=http%3A%2F%2Fwww.backuphowto.info%2Flinux-backup-hard-disk-clone-dd" target="_blank">http://www.backuphowto.info/linux-backup-hard-disk-clone-dd</a>,
-<a class="fixed" href="http://webcartero02.uc3m.es/horde-3.0.9/services/go.php?url=http%3A%2F%2Fwww.inference.phy.cam.ac.uk%2Fsaw27%2Fnotes%2Fbackup-hard-disk-partitions.html" target="_blank">http://www.inference.phy.cam.ac.uk/saw27/notes/backup-hard-disk-partitions.html</a>,
-<a class="fixed" href="http://webcartero02.uc3m.es/horde-3.0.9/services/go.php?url=http%3A%2F%2Fwww.cyberciti.biz%2Ftips%2Fhowto-copy-compressed-drive-image-over-network.html" target="_blank">http://www.cyberciti.biz/tips/howto-copy-compressed-drive-image-over-network.html</a>
+    
+    
+    dd if=backup.gz | gunzip -1 - | "dd of=/dev/sda" 
+    
+
+
+
+via [[http://www.pantz.org/software/dd/drivecopywithsshanddd.html|http://webcartero02.uc3m.es/horde-3.0.9/services/go.php?url=http%3A%2F%2Fwww.pantz.org%2Fsoftware%2Fdd%2Fdrivecopywithsshanddd.html]],
+[[http://karlherrick.com/dev/2008/09/12/dd-backups-over-ssh/|http://webcartero02.uc3m.es/horde-3.0.9/services/go.php?url=http%3A%2F%2Fkarlherrick.com%2Fdev%2F2008%2F09%2F12%2Fdd-backups-over-ssh%2F]],
+[[http://www.backuphowto.info/linux-backup-hard-disk-clone-dd|http://webcartero02.uc3m.es/horde-3.0.9/services/go.php?url=http%3A%2F%2Fwww.backuphowto.info%2Flinux-backup-hard-disk-clone-dd]],
+[[http://www.inference.phy.cam.ac.uk/saw27/notes/backup-hard-disk-partitions.html|http://webcartero02.uc3m.es/horde-3.0.9/services/go.php?url=http%3A%2F%2Fwww.inference.phy.cam.ac.uk%2Fsaw27%2Fnotes%2Fbackup-hard-disk-partitions.html]],
+[[http://www.cyberciti.biz/tips/howto-copy-compressed-drive-image-over-network.html|http://webcartero02.uc3m.es/horde-3.0.9/services/go.php?url=http%3A%2F%2Fwww.cyberciti.biz%2Ftips%2Fhowto-copy-compressed-drive-image-over-network.html]]

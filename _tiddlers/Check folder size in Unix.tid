@@ -2,9 +2,10 @@
 created: '20110701233837'
 modified: '20110701233837'
 title: Check folder size in Unix
-type: text/html
-tags: Unix
+tags: '[[Unix]]'
 ---
 
-<pre class="brush:shell">du -sh</pre>
-via <a href="http://unstableme.blogspot.com/2008/02/how-to-check-folder-size-in-linux-linux.html">UNIX BASH scripting: How to check folder size in linux - Linux Newbie</a>.
+du -sh
+
+
+via [[UNIX BASH scripting: How to check folder size in linux - Linux Newbie|http://unstableme.blogspot.com/2008/02/how-to-check-folder-size-in-linux-linux.html]].

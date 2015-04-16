@@ -2,24 +2,41 @@
 created: '20100406091434'
 modified: '20100406091434'
 title: Delete one or more lines from a file with sed
-type: text/html
-tags: Unix sed
+tags: '[[Unix]] [[sed]]'
 ---
 
 Removing one (or several) line (s) of a file:
 
-<strong>Syntax</strong>
-<pre class="brush:shell">sed '{[/]&lt;n&gt;|&lt;string&gt;|&lt;regex&gt;[/]}d' &lt;fileName&gt;
-sed '{[/]&lt;adr1&gt;[,&lt;adr2&gt;][/]d' &lt;fileName&gt;</pre>
-<ul>
-	<li> /.../=delimiters</li>
-	<li>n = line number</li>
-	<li>string = string found in in line</li>
-	<li>regex = regular expression corresponding to the searched pattern</li>
-	<li>addr = address of a line (number or pattern )</li>
-	<li>d = delete</li>
-</ul>
-<strong>Examples</strong>
+''Syntax''
+
+    
+    sed '{[/]<n>|<string>|<regex>[/]}d' <fileName>
+    sed '{[/]<adr1>[,<adr2>][/]d' <fileName>
+
+
+
+
+
+	
+  * /.../=delimiters
+
+	
+  * n = line number
+
+	
+  * string = string found in in line
+
+	
+  * regex = regular expression corresponding to the searched pattern
+
+	
+  * addr = address of a line (number or pattern )
+
+	
+  * d = delete
+
+
+''Examples''
 
 Remove the 3rd line:
 
@@ -52,8 +69,8 @@ sed '/-Start/,/-End/d' filename.txt
 
 The above examples are only change at the display of the file (stdout1= screen).
 
-For permanent changes to the old versions (&lt;4) use a temporary file for GNU sed use the "-i[suffix]":
+For permanent changes to the old versions (<4) use a temporary file for GNU sed use the "-i[suffix]":
 
 sed -i".bak" '3d' filename.txt
 
-via <a href="http://en.kioskea.net/faq/1451-sed-delete-one-or-more-lines-from-a-file">[Sed] Delete one or more lines from a file</a>.
+via [[[Sed] Delete one or more lines from a file|http://en.kioskea.net/faq/1451-sed-delete-one-or-more-lines-from-a-file]].

@@ -2,12 +2,10 @@
 created: '20110918114532'
 modified: '20110918114532'
 title: Planet Framework
-type: text/html
-post_format: Link
-tags: Frameworks python
+tags: '[[Frameworks]] [[Link]] [[python]]'
 ---
 
-<a href='http://www.planetframework.com/'>Planet Framework</a>
+[[Planet Framework|http://www.planetframework.com/]]
 
 Planet is a full-stack web framework for developing, deploying
 and scaling real-time web applications. 

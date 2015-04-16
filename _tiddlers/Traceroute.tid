@@ -2,11 +2,9 @@
 created: '20110413234227'
 modified: '20110413234227'
 title: Traceroute
-type: text/html
-post_format: Link
-tags: Tools
+tags: '[[Tools]] [[Link]]'
 ---
 
-<a href="http://traceroute.sdv.fr/">Traceroute</a>
+[[Traceroute|http://traceroute.sdv.fr/]]
 
 Traceroute from France

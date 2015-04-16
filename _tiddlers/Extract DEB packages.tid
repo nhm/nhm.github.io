@@ -2,10 +2,9 @@
 created: '20100218172108'
 modified: '20100218172108'
 title: Extract DEB packages
-type: text/html
-tags: Debian Ubuntu
+tags: '[[Debian]] [[Ubuntu]]'
 ---
 
-<code>ar p mypackage.deb data.tar.gz | tar zx </code>
+`ar p mypackage.deb data.tar.gz | tar zx `
 
-via <a href="http://www.g-loaded.eu/2008/01/28/how-to-extract-rpm-or-deb-packages/">How to extract RPM or DEB packages</a>.
+via [[How to extract RPM or DEB packages|http://www.g-loaded.eu/2008/01/28/how-to-extract-rpm-or-deb-packages/]].

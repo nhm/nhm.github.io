@@ -2,17 +2,15 @@
 created: '20110806232227'
 modified: '20110806232227'
 title: SendGrid.com
-type: text/html
-post_format: Link
-tags: Email Delivery
+tags: '[[Email Delivery]] [[Link]]'
 ---
 
-<a href="http://sendgrid.com/">SendGrid.com</a>
+[[SendGrid.com|http://sendgrid.com/]]
 
 Email Delivery. Simplified.
 
 SendGrid's cloud-based email infrastructure relieves businesses of the cost and complexity of maintaining custom email systems. SendGrid provides reliable delivery, scalability and real-time analytics along with flexible API's that make custom integration a breeze.
 
-&nbsp;
 
-&nbsp;
+
+

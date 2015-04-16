@@ -2,31 +2,30 @@
 created: '20100312115931'
 modified: '20100312115931'
 title: Leave a process running in a remote machine
-type: text/html
-tags: Unix launch process remote
+tags: '[[Unix]] [[launch]] [[process]] [[remote]]'
 ---
 
 The nohup command will let you run the program even if you leave the session:
 
-<code>
+`
 nohup your_prog &
-</code>
+`
 
 Another option is to emerge the "screen" package.
 ssh into your host:
 
-<code>
+`
 screen sh
 yourcommand.sh &
 screen -d 
 exit
 exit
-</code>
+`
 
 And it will continue to run.
 
 Run:
-<code>screen -r</code>
-<code>-d detach -r</code> will reattach I suppose.
+`screen -r`
+`-d detach -r` will reattach I suppose.
 
-via <a href="http://www.unix.com/unix-dummies-questions-answers/25971-leave-process-running-remote-machine.html">leave a process running in a remote machine - The UNIX and Linux Forums</a>.
+via [[leave a process running in a remote machine - The UNIX and Linux Forums|http://www.unix.com/unix-dummies-questions-answers/25971-leave-process-running-remote-machine.html]].

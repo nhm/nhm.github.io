@@ -2,8 +2,7 @@
 created: '20110823231333'
 modified: '20110823231333'
 title: Live file updates
-type: text/html
-tags: Unix live real time tail
+tags: '[[Unix]] [[live]] [[real time]] [[tail]]'
 ---
 
-<pre class="brush:shell">tail -f /var/log/system.log</pre>
+tail -f /var/log/system.log

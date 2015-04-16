@@ -2,13 +2,16 @@
 created: '20100407125104'
 modified: '20100407125104'
 title: Set environment variables in Bourne shell sh
-type: text/html
-tags: Unix set sh shell variable
+tags: '[[Unix]] [[set]] [[sh]] [[shell]] [[variable]]'
 ---
 
-<code lang="SHELL">
-<pre class="brush:shell">EDITOR=vi
-export EDITOR</pre>
-</code>
+`
 
-via <a href="http://www.tech-recipes.com/rx/182/set-environment-variables-in-bourne-shell-sh/">Set environment variables in Bourne shell sh | Bourne shell | Tech-Recipes</a>.
+    
+    EDITOR=vi
+    export EDITOR
+
+
+`
+
+via [[Set environment variables in Bourne shell sh | Bourne shell | Tech-Recipes|http://www.tech-recipes.com/rx/182/set-environment-variables-in-bourne-shell-sh/]].

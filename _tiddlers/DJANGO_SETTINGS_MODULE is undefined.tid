@@ -2,12 +2,19 @@
 created: '20110420084317'
 modified: '20110420084317'
 title: DJANGO_SETTINGS_MODULE is undefined
-type: text/html
-tags: Django
+tags: '[[Django]]'
 ---
 
 The problem:
-<p style="padding-left: 30px;"><code>DJANGO_SETTINGS_MODULE is undefined</code> when you run <code>"django-admin.py runserver"</code></p>
+
+
+`DJANGO_SETTINGS_MODULE is undefined` when you run `"django-admin.py runserver"`
+
+
 The solution:
-<p style="padding-left: 30px;"><code>"python manage.py runserver"</code> or <code>"./manage.py runserver"</code></p>
-via <a href="http://docencia.etsit.urjc.es/moodle/mod/forum/discuss.php?d=6637">TSAI: DJANGO_SETTINGS_MODULE is undefined</a>.
+
+
+`"python manage.py runserver"` or `"./manage.py runserver"`
+
+
+via [[TSAI: DJANGO_SETTINGS_MODULE is undefined|http://docencia.etsit.urjc.es/moodle/mod/forum/discuss.php?d=6637]].

@@ -2,10 +2,8 @@
 created: '20110909101951'
 modified: '20110909101951'
 title: Ubuntu Linux Resources
-type: text/html
-post_format: Link
-tags: Resources Ubuntu
+tags: '[[Resources]] [[Ubuntu]] [[Link]]'
 ---
 
-<a href="http://www.psychocats.net/ubuntu/index">Ubuntu Linux Resources</a>
+[[Ubuntu Linux Resources|http://www.psychocats.net/ubuntu/index]]
 It's a collection of tutorials designed to help new Ubuntu users, in particular those coming from a Windows-using background.

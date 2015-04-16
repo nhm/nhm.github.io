@@ -2,11 +2,9 @@
 created: '20110806232314'
 modified: '20110806232314'
 title: Postmark
-type: text/html
-post_format: Link
-tags: Email Delivery
+tags: '[[Email Delivery]] [[Link]]'
 ---
 
-<a href="http://postmarkapp.com/">Postmark</a>
+[[Postmark|http://postmarkapp.com/]]
 
 Email delivery for web apps

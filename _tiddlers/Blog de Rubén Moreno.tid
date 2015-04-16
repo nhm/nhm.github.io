@@ -2,12 +2,10 @@
 created: '20111014205601'
 modified: '20111014205601'
 title: Blog de Rubén Moreno
-type: text/html
-post_format: Link
-tags: Personal cursos
+tags: '[[Personal]] [[Link]] [[cursos]]'
 ---
 
-<a href="http://rmorenomf.wordpress.com/">Blog de Rubén Moreno</a>
+[[Blog de Rubén Moreno|http://rmorenomf.wordpress.com/]]
 
 Blog de Rubén Moreno sobre emprendimiento y formación.
 

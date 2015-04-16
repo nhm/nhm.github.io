@@ -2,83 +2,217 @@
 created: '20110408010114'
 modified: '20110408010114'
 title: Configure Proxy in Windows 7
-type: text/html
-tags: Windows proxy Windows 7
+tags: '[[Windows]] [[proxy]] [[Windows 7]]'
 ---
 
-<span style="color: #1c2837; font-family: arial, verdana, tahoma, sans-serif;"> </span>
-<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;">You can configure a proxy for a <a id="I_indexterm4_d1e38675" class="indexterm" style="color: #1010dd; text-decoration: none;"></a>LAN connection by completing these steps:</p>
 
-<div class="orderedlist" style="padding: 0px; margin: 0px;">
-<ol style="list-style-type: decimal; list-style-position: initial; list-style-image: initial; display: block; padding: 0px; margin: 0px;" type="1">
-	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 2em; display: list-item; padding: 0px;">
-<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;">Click Start, and then click Control Panel.</p>
-</li>
-	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 2em; display: list-item; padding: 0px;">
-<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;">Click Network and Internet, and then click Internet Options.</p>
-</li>
-	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 2em; display: list-item; padding: 0px;">
-<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;">In the Internet Options dialog box, click the Connections tab.</p>
-</li>
-	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 2em; display: list-item; padding: 0px;">
-<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;">Click the LAN Settings button.</p>
-</li>
-	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 2em; display: list-item; padding: 0px;">
-<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;">To enable the use of a proxy server, check the box for “Use a proxy server for your LAN (These settings will not apply to dial-up or VPN connections),” as shown in <a class="xref" style="color: #1010dd; text-decoration: none;" title="Figure 17.16. Configuring LAN proxy settings as necessary" href="http://answers.oreilly.com/topic/675-how-to-configure-proxy-settings-in-windows-7/#configuring_lan_proxy_settings_as_necess">Figure 17.16</a>.</p>
-</li>
-	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 2em; display: list-item; padding: 0px;">
-<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;">Enter the IP address of the proxy in the Address text box.</p>
-</li>
-	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 2em; display: list-item; padding: 0px;">
-<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;">Enter the port number of the proxy in the Port text box.</p>
-</li>
-	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 2em; display: list-item; padding: 0px;">
-<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;">If you want to bypass the proxy server for local IP addresses, select the “Bypass proxy server for local addresses” checkbox.</p>
-</li>
-	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 2em; display: list-item; padding: 0px;">
-<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;">Click OK to complete the proxy configuration process.</p>
-</li>
-</ol>
-</div>
-<div class="figure" style="padding: 0px; margin: 0px;"><a id="configuring_lan_proxy_settings_as_necess" style="color: #1010dd; text-decoration: none;"></a>&nbsp;
-<p class="title" style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;"><strong>Figure 17.16. Configuring LAN proxy settings as necessary</strong></p>
 
-<div class="figure-contents" style="padding: 0px; margin: 0px;">
-<div class="mediaobject" style="padding: 0px; margin: 0px;">
 
-&nbsp;
-<p style="text-align: center;"><a href="http://answers.oreilly.com/topic/675-how-to-configure-proxy-settings-in-windows-7/"><img src="https://nhm.github.io/assets/post-466-125813591496_thumb.png" alt="" /></a></p>
-&nbsp;
+You can configure a proxy for a LAN connection by completing these steps:
 
-</div>
-</div>
-</div>
-<br class="figure-break" />
-<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;">You can configure a proxy for a dial-up or VPN connection by completing these steps:</p>
 
-<div class="orderedlist" style="padding: 0px; margin: 0px;">
-<ol style="list-style-type: decimal; list-style-position: initial; list-style-image: initial; display: block; padding: 0px; margin: 0px;" type="1">
-	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 2em; display: list-item; padding: 0px;">
-<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;">Click Start→Control Panel. Click Network and Internet→Internet Options→ <span class="keep-together">Connections</span> tab.</p>
-</li>
-	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 2em; display: list-item; padding: 0px;">
-<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;">Under Dial-up and Virtual Private Network Settings, click the connection you want to work with and then click Settings.</p>
-</li>
-	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 2em; display: list-item; padding: 0px;">
-<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;">In the Connection Settings dialog box, enable the use of a proxy server by checking the box for “Use a proxy server for this connection (These settings will not apply to other connections).”</p>
-</li>
-	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 2em; display: list-item; padding: 0px;">
-<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;">Enter the IP address of the proxy in the Address text box.</p>
-</li>
-	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 2em; display: list-item; padding: 0px;">
-<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;">Enter the port number of the proxy in the Port text box.</p>
-</li>
-	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 2em; display: list-item; padding: 0px;">
-<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;">Click OK to complete the proxy configuration process.</p>
-</li>
-</ol>
-</div>
-<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px;">Whenever you change network connection settings, you should verify that you can establish a connection and access resources. If you are having difficulty connecting to the Internet after changing your connection settings, check your proxy settings in <span class="keep-together">Internet</span> Options to enable or disable your proxy configuration as appropriate for each connection.</p>
-&nbsp;
 
-via <a href="http://answers.oreilly.com/topic/675-how-to-configure-proxy-settings-in-windows-7/">How to Configure Proxy Settings in Windows 7 - O'Reilly Answers</a>.
+
+
+
+
+
+
+	
+  1. 
+
+
+Click Start, and then click Control Panel.
+
+
+
+
+	
+  2. 
+
+
+Click Network and Internet, and then click Internet Options.
+
+
+
+
+	
+  3. 
+
+
+In the Internet Options dialog box, click the Connections tab.
+
+
+
+
+	
+  4. 
+
+
+Click the LAN Settings button.
+
+
+
+
+	
+  5. 
+
+
+To enable the use of a proxy server, check the box for “Use a proxy server for your LAN (These settings will not apply to dial-up or VPN connections),” as shown in [[Figure 17.16|http://answers.oreilly.com/topic/675-how-to-configure-proxy-settings-in-windows-7/#configuring_lan_proxy_settings_as_necess]].
+
+
+
+
+	
+  6. 
+
+
+Enter the IP address of the proxy in the Address text box.
+
+
+
+
+	
+  7. 
+
+
+Enter the port number of the proxy in the Port text box.
+
+
+
+
+	
+  8. 
+
+
+If you want to bypass the proxy server for local IP addresses, select the “Bypass proxy server for local addresses” checkbox.
+
+
+
+
+	
+  9. 
+
+
+Click OK to complete the proxy configuration process.
+
+
+
+
+
+
+
+
+
+
+
+
+
+''Figure 17.16. Configuring LAN proxy settings as necessary''
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[[img[/assets/post-466-125813591496_thumb.png]]|http://answers.oreilly.com/topic/675-how-to-configure-proxy-settings-in-windows-7/]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+You can configure a proxy for a dial-up or VPN connection by completing these steps:
+
+
+
+
+
+
+
+
+
+	
+  1. 
+
+
+Click Start→Control Panel. Click Network and Internet→Internet Options→ Connections tab.
+
+
+
+
+	
+  2. 
+
+
+Under Dial-up and Virtual Private Network Settings, click the connection you want to work with and then click Settings.
+
+
+
+
+	
+  3. 
+
+
+In the Connection Settings dialog box, enable the use of a proxy server by checking the box for “Use a proxy server for this connection (These settings will not apply to other connections).”
+
+
+
+
+	
+  4. 
+
+
+Enter the IP address of the proxy in the Address text box.
+
+
+
+
+	
+  5. 
+
+
+Enter the port number of the proxy in the Port text box.
+
+
+
+
+	
+  6. 
+
+
+Click OK to complete the proxy configuration process.
+
+
+
+
+
+
+
+
+
+
+Whenever you change network connection settings, you should verify that you can establish a connection and access resources. If you are having difficulty connecting to the Internet after changing your connection settings, check your proxy settings in Internet Options to enable or disable your proxy configuration as appropriate for each connection.
+
+
+
+
+via [[How to Configure Proxy Settings in Windows 7 - O'Reilly Answers|http://answers.oreilly.com/topic/675-how-to-configure-proxy-settings-in-windows-7/]].

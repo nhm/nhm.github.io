@@ -2,15 +2,13 @@
 created: '20110923004121'
 modified: '20110923004121'
 title: Laravel
-type: text/html
-post_format: Link
-tags: Frameworks PHP
+tags: '[[Frameworks]] [[PHP]] [[Link]]'
 ---
 
-<a href="http://laravel.com/">Laravel </a>
+[[Laravel |http://laravel.com/]]
 
-A Clean &amp; Classy PHP Framework
+A Clean & Classy PHP Framework
 
 Laravel is a clean and classy framework for PHP web development. Freeing you from spaghetti code, Laravel helps you create wonderful applications using simple, expressive syntax. Development should be a creative experience that you enjoy, not something that is painful. Enjoy the fresh air.
 
-&nbsp;
+

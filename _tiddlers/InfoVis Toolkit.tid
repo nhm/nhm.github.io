@@ -2,11 +2,9 @@
 created: '20110720182721'
 modified: '20110720182721'
 title: InfoVis Toolkit
-type: text/html
-post_format: Link
-tags: Development JavaScript
+tags: '[[Development]] [[JavaScript]] [[Link]]'
 ---
 
-<a href="http://thejit.org/">JavaScript InfoVis Toolkit</a>
+[[JavaScript InfoVis Toolkit|http://thejit.org/]]
 
 The JavaScript InfoVis Toolkit provides tools for creating Interactive Data Visualizations for the Web.

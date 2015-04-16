@@ -2,12 +2,15 @@
 created: '20100209054742'
 modified: '20100209054742'
 title: Find and remove files
-type: text/html
-tags: Unix delete find remove
+tags: '[[Unix]] [[delete]] [[find]] [[remove]] [[Unix]]'
 ---
 
 To remove multiple files such as *.jpg or *.sh with one command find, use
-<pre name="code">
-find . -name "FILE-TO-FIND"-exec rm -rf {} ;
-</pre>
-via <a href="http://www.cyberciti.biz/faq/linux-unix-how-to-find-and-remove-files/">Linux or Unix find and remove files with one find command on fly</a>.
+
+    
+    
+    find . -name "FILE-TO-FIND"-exec rm -rf {} ;
+    
+
+
+via [[Linux or Unix find and remove files with one find command on fly|http://www.cyberciti.biz/faq/linux-unix-how-to-find-and-remove-files/]].

@@ -2,10 +2,11 @@
 created: '20110701234139'
 modified: '20110701234139'
 title: Make directory if not exists
-type: text/html
-tags: Unix mkdir
+tags: '[[Unix]] [[mkdir]]'
 ---
 
-<pre class="brush:bash">mkdir -p foo </pre>
+mkdir -p foo 
 
-via <a href="http://stackoverflow.com/questions/793858/how-to-mkdir-only-if-a-dir-does-not-already-exist">shell - How to mkdir only if a dir does not already exist? - Stack Overflow</a>.
+
+
+via [[shell - How to mkdir only if a dir does not already exist? - Stack Overflow|http://stackoverflow.com/questions/793858/how-to-mkdir-only-if-a-dir-does-not-already-exist]].

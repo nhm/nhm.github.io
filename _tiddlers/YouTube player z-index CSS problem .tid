@@ -2,26 +2,33 @@
 created: '20110805152029'
 modified: '20110805152029'
 title: 'YouTube player z-index CSS problem '
-type: text/html
-tags: Web css firefox opaque YouTube z-index
+tags: '[[Web]] [[css]] [[firefox]] [[opaque]] [[YouTube]] [[z-index]]'
 ---
 
-Try to add the <code>wmode</code> parameter to be <code>opaque</code> like this:
+Try to add the `wmode` parameter to be `opaque` like this:
 
-(Note that it's included in <em>both</em> a <code>&lt;param&gt;</code> tag <strong>and</strong> a <code>wmode</code> attribute on the <code>&lt;embed&gt;</code> tag.)
-<pre class="brush:xml">&lt;object width='425' height='344'&gt;
-    &lt;param name='movie' value='http://www.youtube.com/v/Wj_JNwNbETA&amp;hl=en&amp;fs=1'&gt;
-    &lt;param name='type' value='application/x-shockwave-flash'&gt;
-    &lt;param name='allowfullscreen' value='true'&gt;
-    &lt;param name='allowscriptaccess' value='always'&gt;
-    &lt;param name="wmode" value="opaque" /&gt;
-    &lt;embed width='425' height='344'
-            src='http://www.youtube.com/v/Wj_JNwNbETA&amp;hl=en&amp;fs=1'
-            type='application/x-shockwave-flash'
-            allowfullscreen='true'
-            allowscriptaccess='always'
-            wmode="opaque"
-    &gt;&lt;/embed&gt;
-    &lt;/object&gt;</pre>
-<pre class="lang-css prettyprint"><code><span class="pun"><br class="pun" /></span></code></pre>
-via <a href="http://stackoverflow.com/questions/326196/ff3-windows-css-z-index-problem-with-youtube-player">flash - FF3/Windows CSS z-index problem with YouTube player - Stack Overflow</a>.
+(Note that it's included in //both// a `<param>` tag ''and'' a `wmode` attribute on the `<embed>` tag.)
+
+    
+    <object width='425' height='344'>
+        <param name='movie' value='http://www.youtube.com/v/Wj_JNwNbETA&hl=en&fs=1'>
+        <param name='type' value='application/x-shockwave-flash'>
+        <param name='allowfullscreen' value='true'>
+        <param name='allowscriptaccess' value='always'>
+        <param name="wmode" value="opaque" />
+        <embed width='425' height='344'
+                src='http://www.youtube.com/v/Wj_JNwNbETA&hl=en&fs=1'
+                type='application/x-shockwave-flash'
+                allowfullscreen='true'
+                allowscriptaccess='always'
+                wmode="opaque"
+        ></embed>
+        </object>
+
+
+
+    
+    <code><span class="pun"><br class="pun"></br></span></code>
+
+
+via [[flash - FF3/Windows CSS z-index problem with YouTube player - Stack Overflow|http://stackoverflow.com/questions/326196/ff3-windows-css-z-index-problem-with-youtube-player]].

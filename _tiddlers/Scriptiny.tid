@@ -2,16 +2,22 @@
 created: '20110423145258'
 modified: '20110423145258'
 title: Scriptiny
-type: text/html
-post_format: Link
-tags: Web
+tags: '[[Web]] [[Link]]'
 ---
 
-<a href="http://www.scriptiny.com/">Scriptiny</a>
+[[Scriptiny|http://www.scriptiny.com/]]
 
 Web Development Blog
-<ul>
-	<li>TinyDropdown</li>
-	<li>TinyBox</li>
-	<li>TinySlider</li>
-</ul>
+
+
+
+	
+  * TinyDropdown
+
+	
+  * TinyBox
+
+	
+  * TinySlider
+
+

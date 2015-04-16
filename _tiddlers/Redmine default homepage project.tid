@@ -2,11 +2,14 @@
 created: '20110503111127'
 modified: '20110503111127'
 title: Redmine default homepage project
-type: text/html
-tags: Development redmine
+tags: '[[Development]] [[redmine]]'
 ---
 
-<code>cofig/routes.rb</code>
-<pre class="brush:ruby">map.home '', :controller =&gt; 'projects', :action =&gt; 'show', :id =&gt; 'my_project_name'</pre>
+`cofig/routes.rb`
 
-via <a href="http://timbroder.com/2011/03/setting-a-project-as-the-default-redmine-homepage.html">Setting a project as the default redmine homepage | timbroder.com</a>.
+    
+    map.home '', :controller => 'projects', :action => 'show', :id => 'my_project_name'
+
+
+
+via [[Setting a project as the default redmine homepage | timbroder.com|http://timbroder.com/2011/03/setting-a-project-as-the-default-redmine-homepage.html]].

@@ -2,11 +2,9 @@
 created: '20110503114030'
 modified: '20110503114030'
 title: Amanda Network Backup
-type: text/html
-post_format: Link
-tags: Servers
+tags: '[[Servers]] [[Link]]'
 ---
 
-<a href="http://www.amanda.org/">Amanda Network Backup: Open Source Backup for Linux, Windows, UNIX and OS X</a>.
+[[Amanda Network Backup: Open Source Backup for Linux, Windows, UNIX and OS X|http://www.amanda.org/]].
 
 AMANDA, the Advanced Maryland Automatic Network Disk Archiver, is a backup solution that allows the IT administrator to set up a single master backup server to back up multiple hosts over network to tape drives/changers or disks or optical media. Amanda uses native utilities and formats (e.g. dump and/or GNU tar) and can back up a large number of servers and workstations running multiple versions of Linux or Unix. Amanda uses a native Windows client to back up Microsoft Windows desktops and servers.

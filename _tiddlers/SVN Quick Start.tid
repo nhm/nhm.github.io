@@ -2,8 +2,7 @@
 created: '20110322151150'
 modified: '20110322151150'
 title: SVN Quick Start
-type: text/html
-tags: Subversion
+tags: '[[Subversion]]'
 ---
 
 Quick Start
@@ -19,19 +18,19 @@ Windows
 Install TortoiseSVN
 The first step is to have a SVN client software. The following tutorial is using TortoiseSVN, which is an open source SVN client. TortoiseSVN can be downloaded from http://tortoisesvn.sourceforge.net/.
 Setup SSH client
-The first step is to setup the ssh client. From the pop-up menu of the File Manager, select TortoiseSVN Setting -&gt; Networks -&gt; SSH and set ssh client to TortoisePlink.exe, which comes together with TortoiseSVN (It is usually in C:Program FilesTortoiseSVNbinTortoisePlink.exe).
+The first step is to setup the ssh client. From the pop-up menu of the File Manager, select TortoiseSVN Setting -> Networks -> SSH and set ssh client to TortoisePlink.exe, which comes together with TortoiseSVN (It is usually in C:Program FilesTortoiseSVNbinTortoisePlink.exe).
 
 You can add two additional arguments after TortoisePlink.exe to avoid entering your username and password everytime:
 C:Program FilesTortoiseSVNbinTortoisePlink.exe -l username -pw password
 Import a new module
-Select a folder that you want to import, e.g. C:toolbox. From the pop-up menu, select TortoiseSVN -&gt; Import, and set URL or Repository to:
+Select a folder that you want to import, e.g. C:toolbox. From the pop-up menu, select TortoiseSVN -> Import, and set URL or Repository to:
 svn+ssh://remote.cs.ubc.ca/lci/svnroot/toolbox
 Checkout a module
-From the pop-up menu of the File Manager, select TortoiseSVN -&gt; Checkout. URL or Repository:	svn+ssh://remote.cs.ubc.ca/lci/svnroot/toolbox
+From the pop-up menu of the File Manager, select TortoiseSVN -> Checkout. URL or Repository:	svn+ssh://remote.cs.ubc.ca/lci/svnroot/toolbox
 Folder: 	D:toolbox.
 
 Commit changes to the repository
-From the pop-up menu of the File Manager, select TortoiseSVN -&gt; Commit.
+From the pop-up menu of the File Manager, select TortoiseSVN -> Commit.
 The manual of TortoiseSVN is available in here.
 Linux
 
@@ -50,4 +49,4 @@ To commit changes to the repository, just enter your working directory and type:
 svn commit
 You can read the e-book Version control with Subversion for more information.
 
-via <a href="http://people.cs.ubc.ca/~vailen/svn_howto.htm">SVN Tutorial</a>.
+via [[SVN Tutorial|http://people.cs.ubc.ca/~vailen/svn_howto.htm]].

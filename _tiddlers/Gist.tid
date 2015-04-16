@@ -2,11 +2,9 @@
 created: '20110514201615'
 modified: '20110514201615'
 title: Gist
-type: text/html
-post_format: Link
-tags: Development Resources
+tags: '[[Development]] [[Resources]] [[Link]]'
 ---
 
-<a href="https://gist.github.com/">Gist</a>
+[[Gist|https://gist.github.com/]]
 
 Gist is a simple way to share snippets and pastes with others. All gists are git repositories, so they are automatically versioned, forkable and usable as a git repository.

@@ -2,11 +2,9 @@
 created: '20110514161914'
 modified: '20110514161914'
 title: Kiwi themes
-type: text/html
-post_format: Link
-tags: Web drupal
+tags: '[[Web]] [[Link]] [[drupal]]'
 ---
 
-<a href="http://kiwi-themes.com/?q=portfolio">Kiwi themes</a>
+[[Kiwi themes|http://kiwi-themes.com/?q=portfolio]]
 
 High quality themes for Drupal

@@ -109,9 +109,11 @@ class GithubAdaptor
     return unless @_checkFile title, callback
     filename = encodeURI encodeURIComponent title
     file = "tiddlers/#{filename}.json"
-    $.getJSON file, (tiddler) ->
+    $.getJSON file, (tiddler) =>
       callback null, tiddler
-    .fail (err) -> callback err.statusText
+    .fail (err) =>
+      @logger.log err
+      callback err.statusText
 
   deleteTiddler: (title, callback, options) ->
     return unless @_checkFile title, callback
@@ -130,7 +132,7 @@ class GithubAdaptor
   _checkFile: (title, callback) ->
     unless @api
       msg = @wiki.getTiddler "$:/language/Notifications/Github/Unauth"
-      callback(msg, null, null)
+      callback(msg.text, null, null)
       return false
     for char in ['/', '\0']
       if char in title

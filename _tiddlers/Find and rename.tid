@@ -2,10 +2,9 @@
 created: '20100312083353'
 modified: '20100312083353'
 title: Find and rename
-type: text/html
-tags: Unix find rename
+tags: '[[Unix]] [[find]] [[rename]]'
 ---
 
-<code>for i in find . -name old-file-name; do mv $i new-file-name; done</code>
+`for i in find . -name old-file-name; do mv $i new-file-name; done`
 
 Care with the ""s

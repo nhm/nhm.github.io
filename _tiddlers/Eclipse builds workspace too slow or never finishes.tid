@@ -2,8 +2,7 @@
 created: '20110322151154'
 modified: '20110322151154'
 title: Eclipse builds workspace too slow or never finishes
-type: text/html
-tags: Eclipse
+tags: '[[Eclipse]]'
 ---
 
 Using the -clean argument
@@ -16,7 +15,7 @@ command line argument to the
 
 eclipse.exe
 
-executable. Let&amp;apos;s
+executable. Let&apos;s
 
 take a look at what the Eclipse help docs tell us this command does:
 
@@ -62,9 +61,9 @@ really random things. There are three easy ways you can go about using
 
 this argument:
 
-Edit the eclipse.ini file located in your &lt;Eclipse install
+Edit the eclipse.ini file located in your <Eclipse install
 
-directory&gt; and add it as the first argument on the first line.
+directory> and add it as the first argument on the first line.
 
 Edit the shortcut you use to start Eclipse and add it as the
 
@@ -84,7 +83,7 @@ each time you want to clean out the workspace. You can name it
 
 something like eclipse-clean.bat (or eclipse-clean.sh).
 
-My preferred way to handle this is #1 only because I don&amp;apos;t do this
+My preferred way to handle this is #1 only because I don&apos;t do this
 
 very often. I open my
 
@@ -100,4 +99,4 @@ step is done I remove the argument from the file, save it and exit from
 
 my text editor.
 
-via <a href="http://www.eclipsezone.com/eclipse/forums/t61566.html">EclipseZone - Keeping Eclipse running clean ...</a>.
+via [[EclipseZone - Keeping Eclipse running clean ...|http://www.eclipsezone.com/eclipse/forums/t61566.html]].

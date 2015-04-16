@@ -2,12 +2,10 @@
 created: '20110825020155'
 modified: '20110825020155'
 title: Uptime Robot
-type: text/html
-post_format: Link
-tags: Applications Servers monitor ping uptime
+tags: '[[Applications]] [[Servers]] [[Link]] [[monitor]] [[ping]] [[uptime]]'
 ---
 
-<a href="http://www.uptimerobot.com/">Uptime Robot</a>
+[[Uptime Robot|http://www.uptimerobot.com/]]
 Free Website Uptime Monitoring
 
 Monitors your websites every 5 minutes, totally free.

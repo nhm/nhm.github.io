@@ -2,10 +2,9 @@
 created: '20110322151153'
 modified: '20110322151153'
 title: Grep invert
-type: text/html
-tags: Unix exclude
+tags: '[[Unix]] [[exclude]]'
 ---
 
 The -v flag to grep inverts your search. Grep output can be sent to another grep for further filtering. So, to find all files with a name containing martin excluding /home/daniel, you would write# find / -user daniel | grep -v /home/daniel | grep martin
 
-via <a href="http://www.linuxquestions.org/questions/linux-general-1/using-find-and-grep-how-to-exclude-a-result-231242/">Using find and grep - how to exclude a result ? - LinuxQuestions.org</a>.
+via [[Using find and grep - how to exclude a result ? - LinuxQuestions.org|http://www.linuxquestions.org/questions/linux-general-1/using-find-and-grep-how-to-exclude-a-result-231242/]].

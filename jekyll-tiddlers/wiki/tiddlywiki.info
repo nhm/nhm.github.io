@@ -2,6 +2,7 @@
   "description": "Jekyll Tiddlers",
   "plugins": [
     "jorgebg/github",
+    "tiddlywiki/markdown",
     "tiddlywiki/codemirror",
     "tiddlywiki/highlight"
   ],

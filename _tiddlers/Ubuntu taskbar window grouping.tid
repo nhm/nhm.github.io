@@ -2,8 +2,7 @@
 created: '20100210001516'
 modified: '20100210001516'
 title: Ubuntu taskbar window grouping
-type: text/html
-tags: Ubuntu group taskbar Windows
+tags: '[[Ubuntu]] [[group]] [[taskbar]] [[Ubuntu]] [[Windows]]'
 ---
 
 1. Right-click the Window List portion of your panel.
@@ -12,4 +11,4 @@ tags: Ubuntu group taskbar Windows
 
 3. When the Window List Preferences window appears, go to the Window Grouping section.  Select either the Group windows when space is limited or the Always group windows radio button.
 
-via <a href="http://www.tech-recipes.com/rx/2770/ubuntu_enable_window_grouping_on_window_list/">Ubuntu: Enable Window Grouping on the Window List | Linux | Tech-Recipes</a>.
+via [[Ubuntu: Enable Window Grouping on the Window List | Linux | Tech-Recipes|http://www.tech-recipes.com/rx/2770/ubuntu_enable_window_grouping_on_window_list/]].

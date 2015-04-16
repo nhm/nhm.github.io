@@ -2,11 +2,9 @@
 created: '20110806113424'
 modified: '20110806113424'
 title: while(true)
-type: text/html
-post_format: Link
-tags: Resources
+tags: '[[Resources]] [[Link]]'
 ---
 
-<a href="http://dmtrs.devio.us/blog/index.php/post/index">while(true) - Post</a>.
+[[while(true) - Post|http://dmtrs.devio.us/blog/index.php/post/index]].
 
 Development blog.

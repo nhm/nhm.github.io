@@ -2,11 +2,9 @@
 created: '20110514155923'
 modified: '20110514155923'
 title: Agile Toolkit
-type: text/html
-post_format: Link
-tags: Web
+tags: '[[Web]] [[Link]]'
 ---
 
-<a href="http://agiletoolkit.org/">Agile Toolkit</a>
+[[Agile Toolkit|http://agiletoolkit.org/]]
 
-Agile Toolkit is a high-performance <strong>PHP framework</strong> for UI development with <strong>jQuery</strong>. High levels of efficiency are achieved because your database and your UI are seamlessly and securely integrated. Achieve more with less code.
+Agile Toolkit is a high-performance ''PHP framework'' for UI development with ''jQuery''. High levels of efficiency are achieved because your database and your UI are seamlessly and securely integrated. Achieve more with less code.

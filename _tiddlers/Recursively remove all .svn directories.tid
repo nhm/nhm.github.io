@@ -2,9 +2,10 @@
 created: '20110425083725'
 modified: '20110425083725'
 title: Recursively remove all .svn directories
-type: text/html
-tags: Subversion Unix
+tags: '[[Subversion]] [[Unix]]'
 ---
 
-<pre>find . -name .svn -print0 | xargs -0 rm -rf</pre>
-via <a href="http://codesnippets.joyent.com/posts/show/104">CodeSnippets: Recursively remove all .svn directories [shell] [svn] [bash]</a>.
+find . -name .svn -print0 | xargs -0 rm -rf
+
+
+via [[CodeSnippets: Recursively remove all .svn directories [shell] [svn] [bash]|http://codesnippets.joyent.com/posts/show/104]].

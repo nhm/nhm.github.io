@@ -2,11 +2,9 @@
 created: '20110806232801'
 modified: '20110806232801'
 title: JS1k
-type: text/html
-post_format: Link
-tags: JavaScript competition
+tags: '[[JavaScript]] [[Link]] [[competition]]'
 ---
 
-<a href="http://js1k.com/">JS1k, home of the 1k Javascript demo contest</a>
+[[JS1k, home of the 1k Javascript demo contest|http://js1k.com/]]
 
 The object of this competition is to create a cool JavaScript "application" no larger than 1k. Starting out as a joke, the first version ended with a serious amount of submissions, prizes and quality.

@@ -2,10 +2,10 @@
 created: '20110826063744'
 modified: '20110826063744'
 title: Railsdog Blog
-type: text/html
-post_format: Link
-tags: Resources RoR
+tags: '[[Resources]] [[RoR]] [[Link]]'
 ---
 
-<a href="http://railsdog.com/blog/">Railsdog  Blog</a>
-<blockquote><span class="Apple-style-span" style="color: #666666; font-family: Helvetica, Arial, Verdana, sans-serif; font-size: 14px; line-height: 21px; background-color: #ffffff;">We are a technology consulting firm specializing in web application and e-commerce development. We have deep knowledge of open source technology and internet applications. Our considerable experience will help us deliver your software project on time and to your exact specifications.</span></blockquote>
+[[Railsdog  Blog|http://railsdog.com/blog/]]
+
+
+<blockquote>We are a technology consulting firm specializing in web application and e-commerce development. We have deep knowledge of open source technology and internet applications. Our considerable experience will help us deliver your software project on time and to your exact specifications.</blockquote>

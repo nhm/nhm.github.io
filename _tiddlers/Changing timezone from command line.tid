@@ -2,9 +2,10 @@
 created: '20110727100256'
 modified: '20110727100256'
 title: Changing timezone from command line
-type: text/html
-tags: Ubuntu date timezone
+tags: '[[Ubuntu]] [[date]] [[timezone]]'
 ---
 
-<pre class="brush:shell">dpkg-reconfigure tzdata</pre>
-via <a href="http://webonrails.com/2009/07/15/change-timezone-of-ubuntu-machine-from-command-line/">Changing timezone from command line | WebOnRails</a>.
+dpkg-reconfigure tzdata
+
+
+via [[Changing timezone from command line | WebOnRails|http://webonrails.com/2009/07/15/change-timezone-of-ubuntu-machine-from-command-line/]].

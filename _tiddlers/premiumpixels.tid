@@ -2,10 +2,8 @@
 created: '20110807015642'
 modified: '20110807015642'
 title: premiumpixels
-type: text/html
-post_format: Link
-tags: Images buttons
+tags: '[[Images]] [[Link]] [[buttons]]'
 ---
 
-<a href="http://www.premiumpixels.com/">www.premiumpixels.com</a>
-Premium Pixels is a bunch of free design resources &amp; tutorials created by Orman Clark.
+[[www.premiumpixels.com|http://www.premiumpixels.com/]]
+Premium Pixels is a bunch of free design resources & tutorials created by Orman Clark.

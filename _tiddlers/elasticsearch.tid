@@ -2,9 +2,9 @@
 created: '20110917160552'
 modified: '20110917160552'
 title: elasticsearch
-type: text/html
-post_format: Link
-tags: Applications search engine
+tags: '[[Applications]] [[Link]] [[search engine]]'
 ---
 
-<a href='http://www.elasticsearch.org/'>elasticsearch</a><p>Open Source, Distributed, RESTful, Search Engine. Lucene-based.</p>
+[[elasticsearch|http://www.elasticsearch.org/]]
+
+Open Source, Distributed, RESTful, Search Engine. Lucene-based.

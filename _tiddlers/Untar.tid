@@ -2,16 +2,27 @@
 created: '20110423114651'
 modified: '20110423114651'
 title: Untar
-type: text/html
-tags: Unix
+tags: '[[Unix]]'
 ---
 
-<strong>tar</strong>
-<pre class="brush:shell">tar xvf something.tar</pre>
-<strong>tar gz</strong>
-<pre class="brush:shell">tar xvfz something.tar.gz</pre>
-<strong>tar bz</strong>
-<pre class="brush:shell">tar xvjf something.tar.bz2</pre>
-&nbsp;
+''tar''
 
-via <a href="http://www.freebsddiary.org/untar.php">The FreeBSD Diary -- how to untar/tar</a>.
+    
+    tar xvf something.tar
+
+
+''tar gz''
+
+    
+    tar xvfz something.tar.gz
+
+
+''tar bz''
+
+    
+    tar xvjf something.tar.bz2
+
+
+
+
+via [[The FreeBSD Diary -- how to untar/tar|http://www.freebsddiary.org/untar.php]].

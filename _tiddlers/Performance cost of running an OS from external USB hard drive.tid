@@ -2,30 +2,73 @@
 created: '20110825223943'
 modified: '20110825223943'
 title: Performance cost of running an OS from external USB hard drive
-type: text/html
-tags: Computers performance usb
+tags: '[[Computers]] [[performance]] [[usb]]'
 ---
 
-<span class="Apple-style-span" style="color: #333333; font-family: 'Ubuntu Beta', UbuntuBeta, Ubuntu, 'Bitstream Vera Sans', 'DejaVu Sans', Tahoma, sans-serif; font-size: 14px; line-height: 17px; background-color: #f7f7f7;">USB2 is fairly universal and it's allowed us to get a lot of extra hardware attached to our computers but for transfer speed, it's just no good. Around 20-30MB/s would be typical in my experience.</span><span class="Apple-style-span" style="color: #333333; font-family: 'Ubuntu Beta', UbuntuBeta, Ubuntu, 'Bitstream Vera Sans', 'DejaVu Sans', Tahoma, sans-serif; font-size: 14px; line-height: 17px; background-color: #f7f7f7;"></span>
-<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; border-style: initial; border-color: initial; font-size: 14px; vertical-align: baseline; background-color: transparent; clear: both; word-wrap: break-word; border-width: 0px; padding: 0px;">Might not sound terrible but an average internal drive manages 70-100MB/s and a great SATA drive can touch 300MB/s. There are of course even better products but they're prohibitively expensive.</p>
+USB2 is fairly universal and it's allowed us to get a lot of extra hardware attached to our computers but for transfer speed, it's just no good. Around 20-30MB/s would be typical in my experience.
 
-<ul style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 30px; border-style: initial; border-color: initial; font-size: 14px; vertical-align: baseline; background-color: transparent; list-style-type: disc; list-style-position: initial; list-style-image: initial; border-width: 0px; padding: 0px;">
-	<li style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; border-style: initial; border-color: initial; font-size: 14px; vertical-align: baseline; background-color: transparent; line-height: 16px; word-wrap: break-word; border-width: 0px; padding: 0px;">
-<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; border-style: initial; border-color: initial; font-size: 14px; vertical-align: baseline; background-color: transparent; clear: both; word-wrap: break-word; border-width: 0px; padding: 0px;">USB 3 is far better but although we've had drivers in Linux longer than any other platform, they're still pretty buggy in my experience. You might ask him to try upgrading the kernel to 2.6.37 and then trying USB3. The last two kernels since Maverick's 2.6.35 has had a few USB3 changes. This similarly might not fix anything - Grub could equally be the issue.</p>
-</li>
-	<li style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; border-style: initial; border-color: initial; font-size: 14px; vertical-align: baseline; background-color: transparent; line-height: 16px; word-wrap: break-word; border-width: 0px; padding: 0px;">
-<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; border-style: initial; border-color: initial; font-size: 14px; vertical-align: baseline; background-color: transparent; clear: both; word-wrap: break-word; border-width: 0px; padding: 0px;">eSATA would be the ideal for an external drive. I don't know what your friend's computer has in the way of ports (or what his external disk provides), but eSATA will wipe the floor with USB 2 (probably even USB3 in real-world tests). If he has it, use it. If he has a spare PCI-E slot, perhaps a little eSATA card might be a better bet (they're quite cheap).</p>
-<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; border-style: initial; border-color: initial; font-size: 14px; vertical-align: baseline; background-color: transparent; clear: both; word-wrap: break-word; border-width: 0px; padding: 0px;">Seek time will probably be the biggest improvement over Firewire (and USB3). It doesn't matter too much for storing big media but when you're buzzing between lots of small files (like the Linux boot), it makes a huge difference.</p>
-</li>
-	<li style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; border-style: initial; border-color: initial; font-size: 14px; vertical-align: baseline; background-color: transparent; line-height: 16px; word-wrap: break-word; border-width: 0px; padding: 0px;">
-<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; border-style: initial; border-color: initial; font-size: 14px; vertical-align: baseline; background-color: transparent; clear: both; word-wrap: break-word; border-width: 0px; padding: 0px;">Firewire might be an option if he has that option on the drive and computer... Firewire is often criticised for being slower than USB but spec for spec, it's actually a lot faster in practice for data transfer. Seek speeds are similar.</p>
-</li>
-	<li style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; border-style: initial; border-color: initial; font-size: 14px; vertical-align: baseline; background-color: transparent; line-height: 16px; word-wrap: break-word; border-width: 0px; padding: 0px;">
-<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; border-style: initial; border-color: initial; font-size: 14px; vertical-align: baseline; background-color: transparent; clear: both; word-wrap: break-word; border-width: 0px; padding: 0px;">If he has a fast network adapter and some spare cash, a network-attached-storage device might be a nice option. You can get two-drive units quite cheap that can share their files over NFS. If you have gigabit connections at each end this can translate to a fairly steady 100+MB/s</p>
-</li>
-	<li style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; border-style: initial; border-color: initial; font-size: 14px; vertical-align: baseline; background-color: transparent; line-height: 16px; word-wrap: break-word; border-width: 0px; padding: 0px;">
-<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; border-style: initial; border-color: initial; font-size: 14px; vertical-align: baseline; background-color: transparent; clear: both; word-wrap: break-word; border-width: 0px; padding: 0px;">Finally, if nothing else seems like an option... Ask him why he's being such a jessy and get him to repartition. You can resize the Windows partition non-destructively (ie it stays there all warm and happy, just a bit smaller).</p>
-<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; border-style: initial; border-color: initial; font-size: 14px; vertical-align: baseline; background-color: transparent; clear: both; word-wrap: break-word; border-width: 0px; padding: 0px;">Just set aside ~10gigs for the core Ubuntu install and a base profile and then just symlink big media in from the external drive. Boot time and responsiveness will improve huge amounts.</p>
-</li>
-</ul>
-via <a href="http://askubuntu.com/questions/21741/performance-cost-of-running-ubuntu-from-external-hard-drive">Performance cost of running Ubuntu from external hard drive - Ask Ubuntu - Stack Exchange</a>.
+
+Might not sound terrible but an average internal drive manages 70-100MB/s and a great SATA drive can touch 300MB/s. There are of course even better products but they're prohibitively expensive.
+
+
+
+
+
+
+	
+  * 
+
+
+USB 3 is far better but although we've had drivers in Linux longer than any other platform, they're still pretty buggy in my experience. You might ask him to try upgrading the kernel to 2.6.37 and then trying USB3. The last two kernels since Maverick's 2.6.35 has had a few USB3 changes. This similarly might not fix anything - Grub could equally be the issue.
+
+
+
+
+	
+  * 
+
+
+eSATA would be the ideal for an external drive. I don't know what your friend's computer has in the way of ports (or what his external disk provides), but eSATA will wipe the floor with USB 2 (probably even USB3 in real-world tests). If he has it, use it. If he has a spare PCI-E slot, perhaps a little eSATA card might be a better bet (they're quite cheap).
+
+
+
+
+Seek time will probably be the biggest improvement over Firewire (and USB3). It doesn't matter too much for storing big media but when you're buzzing between lots of small files (like the Linux boot), it makes a huge difference.
+
+
+
+
+	
+  * 
+
+
+Firewire might be an option if he has that option on the drive and computer... Firewire is often criticised for being slower than USB but spec for spec, it's actually a lot faster in practice for data transfer. Seek speeds are similar.
+
+
+
+
+	
+  * 
+
+
+If he has a fast network adapter and some spare cash, a network-attached-storage device might be a nice option. You can get two-drive units quite cheap that can share their files over NFS. If you have gigabit connections at each end this can translate to a fairly steady 100+MB/s
+
+
+
+
+	
+  * 
+
+
+Finally, if nothing else seems like an option... Ask him why he's being such a jessy and get him to repartition. You can resize the Windows partition non-destructively (ie it stays there all warm and happy, just a bit smaller).
+
+
+
+
+Just set aside ~10gigs for the core Ubuntu install and a base profile and then just symlink big media in from the external drive. Boot time and responsiveness will improve huge amounts.
+
+
+
+
+
+via [[Performance cost of running Ubuntu from external hard drive - Ask Ubuntu - Stack Exchange|http://askubuntu.com/questions/21741/performance-cost-of-running-ubuntu-from-external-hard-drive]].

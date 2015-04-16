@@ -2,9 +2,7 @@
 created: '20110805152851'
 modified: '20110805152851'
 title: PHP Regular Expressions Cheat Sheet
-type: text/html
-post_format: Link
-tags: PHP
+tags: '[[PHP]] [[Link]]'
 ---
 
-<a href="http://php-regex.blogspot.com/">PHP Regular Expression Tutorial</a>
+[[PHP Regular Expression Tutorial|http://php-regex.blogspot.com/]]

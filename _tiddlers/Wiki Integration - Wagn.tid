@@ -2,11 +2,9 @@
 created: '20110407194620'
 modified: '20110407194620'
 title: Wiki Integration - Wagn
-type: text/html
-post_format: Link
-tags: Wikis
+tags: '[[Wikis]] [[Link]]'
 ---
 
-<a href="http://www.wagn.org/">Wiki Integration - Wagn</a>.
+[[Wiki Integration - Wagn|http://www.wagn.org/]].
 
-<span style="color: #444444; font-family: verdana, arial, helvetica, sans-serif; font-size: 12px; line-height: 21px;">Wagn lets you organize information into chunks called <a class="known-card" style="color: #448844; text-decoration: none;" href="http://www.wagn.org/wagn/cards">cards</a>. Each of these <a class="known-card" style="color: #448844; text-decoration: none;" href="http://www.wagn.org/wagn/wiki">"wiki"</a> building blocks has a unique name and a <a class="wanted-card" style="color: #990000; text-decoration: none;" href="http://www.wagn.org/wagn/revision">revision</a> history.  The demo video illustrates creating and editing cards, <a class="known-card" style="color: #448844; text-decoration: none;" href="http://www.wagn.org/wagn/auto_save">auto-saving</a>, and <a class="known-card" style="color: #448844; text-decoration: none;" href="http://www.wagn.org/wagn/renaming">renaming</a>.</span>
+Wagn lets you organize information into chunks called [[cards|http://www.wagn.org/wagn/cards]]. Each of these [["wiki"|http://www.wagn.org/wagn/wiki]] building blocks has a unique name and a [[revision|http://www.wagn.org/wagn/revision]] history.  The demo video illustrates creating and editing cards, [[auto-saving|http://www.wagn.org/wagn/auto_save]], and [[renaming|http://www.wagn.org/wagn/renaming]].

@@ -2,11 +2,12 @@
 created: '20110727090553'
 modified: '20110727090553'
 title: Copy multiple MySQL databases from one server to another securely
-type: text/html
-tags: MySQL clone copy dump migrate securely
+tags: '[[MySQL]] [[clone]] [[copy]] [[dump]] [[migrate]] [[securely]]'
 ---
 
-<pre class="brush:shell">mysqldump -uroot -plocalrootpassword 
--a --databases drupaldatabase1 drupaldatabase2 | ssh root@destinationserver.com 
-"mysql -uroot -pdestinationrootpassword"</pre>
-via <a href="http://drupal.org/node/83178">Copy multiple MySQL databases from one server to another, securely | drupal.org</a>.
+mysqldump -uroot -plocalrootpassword 
+    -a --databases drupaldatabase1 drupaldatabase2 | ssh root@destinationserver.com 
+    "mysql -uroot -pdestinationrootpassword"
+
+
+via [[Copy multiple MySQL databases from one server to another, securely | drupal.org|http://drupal.org/node/83178]].

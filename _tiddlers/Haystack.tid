@@ -2,10 +2,9 @@
 created: '20110419232011'
 modified: '20110419232011'
 title: Haystack
-type: text/html
-tags: Django search
+tags: '[[Django]] [[search]]'
 ---
 
-<a href="http://haystacksearch.org/">Haystack</a>
+[[Haystack|http://haystacksearch.org/]]
 
 Modular search for django. Haystack is BSD licensed, plays nicely with third-party app without needing to modify the source and supports Solr, Whoosh and Xapian.

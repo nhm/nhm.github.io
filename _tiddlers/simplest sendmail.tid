@@ -2,35 +2,37 @@
 created: '20111201022040'
 modified: '20111201022040'
 title: simplest sendmail
-type: text/html
-tags: Servers
+tags: '[[Servers]]'
 ---
 
-<pre>
-#!/usr/bin/env python
-import sys
-import smtplib
-import email
 
-data = sys.stdin.read()
-message = email.message_from_string(data)
-recipient = message.get_all('To')
-sender = message['From']
+    #!/usr/bin/env python
+    import sys
+    import smtplib
+    import email
+    
+    data = sys.stdin.read()
+    message = email.message_from_string(data)
+    recipient = message.get_all('To')
+    sender = message['From']
+    
+    server = 'smtp.gmail.com'
+    port = 587
+    
+    username = 'user@gmail.com'
+    password = 'secret'
+    
+    session = smtplib.SMTP(server, port)
+    
+    session.ehlo()
+    session.starttls()
+    session.ehlo
+    session.login(username, password)
+    
+    session.sendmail(sender, recipient, data)
+    session.quit()
+    
+    
 
-server = 'smtp.gmail.com'
-port = 587
 
-username = 'user@gmail.com'
-password = 'secret'
 
-session = smtplib.SMTP(server, port)
-
-session.ehlo()
-session.starttls()
-session.ehlo
-session.login(username, password)
-
-session.sendmail(sender, recipient, data)
-session.quit()
-
-</pre>

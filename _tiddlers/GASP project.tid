@@ -2,15 +2,13 @@
 created: '20110514163448'
 modified: '20110514163448'
 title: GASP project
-type: text/html
-post_format: Link
-tags: Development
+tags: '[[Development]] [[Link]]'
 ---
 
-<a href="http://gasp.ow2.org/">GASP project</a>
+[[GASP project|http://gasp.ow2.org/]]
 
 Middleware solutions dedicated to Multiplayer Mobile Games (MMG) and Multiplayer Ubiquitous Games (MUGs)
 
 GASP is a research project of the CEDRIC laboratory of CNAM Paris university and the research department of INT Evry engineer school.
 
-&nbsp;
+

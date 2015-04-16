@@ -2,12 +2,11 @@
 created: '20110524202144'
 modified: '20110524202144'
 title: Does git ignore empty folders?
-type: text/html
-tags: Git
+tags: '[[Git]]'
 ---
 
-Git doesn't ignore empty directories.<strong> It ignores all directories</strong>.
+Git doesn't ignore empty directories.'' It ignores all directories''.
 
-In Git, directories exist only implicitly, through their contents. <strong>Emtpy directories have no contents, therefore they don't exist</strong>.
+In Git, directories exist only implicitly, through their contents. ''Emtpy directories have no contents, therefore they don't exist''.
 
-via <a href="http://stackoverflow.com/questions/3030230/does-git-ignore-empty-folders">version control - Does git ignore empty folders? - Stack Overflow</a>.
+via [[version control - Does git ignore empty folders? - Stack Overflow|http://stackoverflow.com/questions/3030230/does-git-ignore-empty-folders]].

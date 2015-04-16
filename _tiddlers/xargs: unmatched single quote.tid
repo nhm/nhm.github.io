@@ -2,8 +2,7 @@
 created: '20110322151149'
 modified: '20110322151149'
 title: 'xargs: unmatched single quote'
-type: text/html
-tags: Unix
+tags: '[[Unix]]'
 ---
 
 OK… Here is a short tip that might help others in the same situation: here i was running a simple find/grep command that I have always used to search for files matching some string; this was something simple like:
@@ -14,10 +13,10 @@ And bum… After a while the command failed with the error: “xargs: unmatched 
 
 If you encounter a similar problems the solutions is to add -printf ‘”%p”n’ to the find command line that will enclose all file names into double quotes:
 
-find . -type f -printf &amp;apos;"%p"n&amp;apos; | xargs grep string
+find . -type f -printf &apos;"%p"n&apos; | xargs grep string
 
 if your find command does not have the -printf operand, you can try to use the -print0 operand and the command will look like:
 
 find . -type f -print0 | xargs -0 grep string
 
-via <a href="http://www.ducea.com/2007/11/22/xargs-unmatched-single-quote/">xargs: unmatched single quote | MDLog:/sysadmin</a>.
+via [[xargs: unmatched single quote | MDLog:/sysadmin|http://www.ducea.com/2007/11/22/xargs-unmatched-single-quote/]].

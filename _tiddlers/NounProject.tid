@@ -2,11 +2,9 @@
 created: '20110503110757'
 modified: '20110503110757'
 title: NounProject
-type: text/html
-post_format: Link
-tags: Resources
+tags: '[[Resources]] [[Link]]'
 ---
 
-<a href="http://thenounproject.com/">NounProject</a>.
+[[NounProject|http://thenounproject.com/]].
 
 The Noun Project collects, organizes and adds to the highly recognizable symbols that form the world's visual language, so we may share them in a fun and meaningful way.

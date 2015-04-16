@@ -2,25 +2,50 @@
 created: '20110720095936'
 modified: '20110720095936'
 title: Run Linux partition in Windows
-type: text/html
-tags: VMware virtualization
+tags: '[[VMware]] [[virtualization]]'
 ---
 
-<strong>VMware Workstation </strong>7+ offers this functionality.
+''VMware Workstation ''7+ offers this functionality.
 
-<strong>Steps</strong>
-<ol>
-	<li>Create a new VM</li>
-	<li>Custom (advanced) -&gt; Next</li>
-	<li>-&gt; Next</li>
-	<li>I will install later -&gt; Next</li>
-	<li>Linux -&gt; Next</li>
-	<li>-&gt; Next</li>
-	<li>-&gt; Next</li>
-	<li>-&gt; Next</li>
-	<li>-&gt; Next</li>
-	<li>-&gt; Next</li>
-	<li>Use Physical disk (for advanced users) -&gt; Next</li>
-	<li>Use individual partition -&gt; Next</li>
-</ol>
-via <a href="http://superuser.com/questions/155533/how-can-i-run-my-ubuntu-partition-in-windows-vmware">linux - How can I run my ubuntu partition in Windows? vmware? - Super User</a>.
+''Steps''
+
+
+
+	
+  1. Create a new VM
+
+	
+  2. Custom (advanced) -> Next
+
+	
+  3. -> Next
+
+	
+  4. I will install later -> Next
+
+	
+  5. Linux -> Next
+
+	
+  6. -> Next
+
+	
+  7. -> Next
+
+	
+  8. -> Next
+
+	
+  9. -> Next
+
+	
+  10. -> Next
+
+	
+  11. Use Physical disk (for advanced users) -> Next
+
+	
+  12. Use individual partition -> Next
+
+
+via [[linux - How can I run my ubuntu partition in Windows? vmware? - Super User|http://superuser.com/questions/155533/how-can-i-run-my-ubuntu-partition-in-windows-vmware]].

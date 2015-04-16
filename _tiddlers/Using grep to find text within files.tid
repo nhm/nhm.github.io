@@ -2,12 +2,13 @@
 created: '20100209055813'
 modified: '20100209055813'
 title: Using grep to find text within files
-type: text/html
-tags: Unix find grep text
+tags: '[[Unix]] [[find]] [[grep]] [[text]]'
 ---
 
-<pre>
-grep "text-to-find" file-pattern
-</pre>
 
-via <a href="http://www.computerhope.com/issues/ch000757.htm">How do I find text within files in Linux?</a>.
+    grep "text-to-find" file-pattern
+    
+
+
+
+via [[How do I find text within files in Linux?|http://www.computerhope.com/issues/ch000757.htm]].

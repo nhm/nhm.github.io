@@ -2,19 +2,27 @@
 created: '20110427165544'
 modified: '20110427165544'
 title: 7bit
-type: text/html
-post_format: Link
-tags: Development
+tags: '[[Development]] [[Link]]'
 ---
 
-<a href="http://www.7bit.es/">http://www.7bit.es/</a>
+[[http://www.7bit.es/|http://www.7bit.es/]]
 
 No llegamos al byte!
 
 Blog de informática, con cuatro niveles:
-<ul>
-	<li>Humano</li>
-	<li>Básico</li>
-	<li>Técnico</li>
-	<li>Gurú</li>
-</ul>
+
+
+
+	
+  * Humano
+
+	
+  * Básico
+
+	
+  * Técnico
+
+	
+  * Gurú
+
+

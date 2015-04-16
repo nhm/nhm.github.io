@@ -2,12 +2,10 @@
 created: '20110830084933'
 modified: '20110830084933'
 title: Claypool
-type: text/html
-post_format: Link
-tags: Frameworks Web
+tags: '[[Frameworks]] [[Web]] [[Link]]'
 ---
 
-<a href="http://www.claypooljs.com/">Claypool</a>.
+[[Claypool|http://www.claypooljs.com/]].
 jQuery-based Javascript Application Framework
 
 Claypool is a small, fast, railable Javascript Application Framework , built on jQuery that provides all the usual important patterns for large, long-lived client-side apps, server-side apps, or something strangely, beautifully in the middle.

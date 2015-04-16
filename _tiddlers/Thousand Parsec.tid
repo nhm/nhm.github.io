@@ -2,12 +2,10 @@
 created: '20110419115459'
 modified: '20110419115459'
 title: Thousand Parsec
-type: text/html
-post_format: Link
-tags: Development framework python
+tags: '[[Development]] [[Link]] [[framework]] [[python]]'
 ---
 
-<a href="http://www.thousandparsec.net/">Thousand Parsec</a>
+[[Thousand Parsec|http://www.thousandparsec.net/]]
 
 Thousand Parsec is a bunch of games based on a common framework for building turn based space empire building games. Some of the games, such as our first demo game MiniSec, are developed by the Thousand Parsec developers themselves. In the near future we hope that other developers will create their own games using Thousand Parsec framework.
 

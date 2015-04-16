@@ -2,8 +2,7 @@
 created: '20110322151151'
 modified: '20110322151151'
 title: Howto add user to group
-type: text/html
-tags: Unix
+tags: '[[Unix]]'
 ---
 
 useradd example - Add a new user to secondary group
@@ -16,4 +15,4 @@ Create a new user called vivek and add it to group called developers. First logi
 
 # grep developers /etc/group
 
-via <a href="http://www.cyberciti.biz/faq/howto-linux-add-user-to-group/">Howto: Linux Add User To Group</a>.
+via [[Howto: Linux Add User To Group|http://www.cyberciti.biz/faq/howto-linux-add-user-to-group/]].

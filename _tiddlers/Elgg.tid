@@ -2,15 +2,13 @@
 created: '20110917163656'
 modified: '20110917163656'
 title: Elgg
-type: text/html
-post_format: Link
-tags: Development Web social network engine
+tags: '[[Development]] [[Web]] [[Link]] [[social network engine]]'
 ---
 
-<a href="http://www.elgg.org/">Elgg</a>
+[[Elgg|http://www.elgg.org/]]
 
 Open Source Social Networking Engine
 
-&nbsp;
+
 
 Elgg is an award-winning social networking engine, delivering the building blocks that enable businesses, schools, universities and associations to create their own fully-featured social networks and applications.

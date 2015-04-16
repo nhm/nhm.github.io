@@ -2,11 +2,9 @@
 created: '20110419092751'
 modified: '20110419092751'
 title: Message
-type: text/html
-post_format: Link
-tags: Servers
+tags: '[[Servers]] [[Link]]'
 ---
 
-<a href="http://messagecms.com/">Message</a>
+[[Message|http://messagecms.com/]]
 
 Message is a versioned datastore.  It's ideally suited           for collaboratively evolving structured content.

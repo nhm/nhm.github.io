@@ -2,16 +2,23 @@
 created: '20110408005752'
 modified: '20110408005752'
 title: Internet Explorer 7 on Windows 7
-type: text/html
-tags: Browsers Internet Explorer 7 Windows 7
+tags: '[[Browsers]] [[Internet Explorer 7]] [[Windows 7]]'
 ---
 
 You can't install Internet Explorer 7 but you can run it inside Internet Explorer 8 (as the rendering engine is bundled) by doing the following:
-<ol>
-	<li>Open IE8</li>
-	<li>Open &gt;Tools &gt;Developer Tools</li>
-	<li>Switch Browser Mode to IE7 and Document Mode to IE7</li>
-</ol>
-Alternatively, you can download an installer for every Internet Explorer version from <a href="http://finalbuilds.edskes.net/iecollection.htm">http://finalbuilds.edskes.net/iecollection.htm</a>
 
-via <a href="http://superuser.com/questions/32327/how-can-i-install-internet-explorer-7-on-windows-7">How can I install Internet Explorer 7 on Windows 7? - Super User</a>.
+
+
+	
+  1. Open IE8
+
+	
+  2. Open >Tools >Developer Tools
+
+	
+  3. Switch Browser Mode to IE7 and Document Mode to IE7
+
+
+Alternatively, you can download an installer for every Internet Explorer version from [[http://finalbuilds.edskes.net/iecollection.htm|http://finalbuilds.edskes.net/iecollection.htm]]
+
+via [[How can I install Internet Explorer 7 on Windows 7? - Super User|http://superuser.com/questions/32327/how-can-i-install-internet-explorer-7-on-windows-7]].

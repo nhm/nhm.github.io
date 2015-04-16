@@ -2,10 +2,8 @@
 created: '20111002112826'
 modified: '20111002112826'
 title: Google PageRank Checker
-type: text/html
-post_format: Link
-tags: Google
+tags: '[[Google]] [[Link]]'
 ---
 
-<a href="http://www.prchecker.info/">Google PageRank Checker</a>
+[[Google PageRank Checker|http://www.prchecker.info/]]
 Check Google page rank of any web pages

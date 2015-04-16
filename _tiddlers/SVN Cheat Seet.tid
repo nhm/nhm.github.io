@@ -2,20 +2,37 @@
 created: '20110818071421'
 modified: '20110818071421'
 title: SVN Cheat Seet
-type: text/html
-tags: Subversion
+tags: '[[Subversion]]'
 ---
 
-<strong>Create a new repository</strong>
-<pre>	svnadmin create</pre>
-<strong>Checkout</strong>
-<pre>	svn checkout</pre>
-<strong>Add &amp; commit</strong>
-<pre>	svn add
-	svn commit</pre>
-<strong>Reverting changes</strong>
-<pre>	svn revert</pre>
-<strong>GNU/Linux commands</strong>
-<pre>	svn ls
-	svn mkdir
-	svn rm</pre>
+''Create a new repository''
+
+    
+    	svnadmin create
+
+
+''Checkout''
+
+    
+    	svn checkout
+
+
+''Add & commit''
+
+    
+    	svn add
+    	svn commit
+
+
+''Reverting changes''
+
+    
+    	svn revert
+
+
+''GNU/Linux commands''
+
+    
+    	svn ls
+    	svn mkdir
+    	svn rm

@@ -2,11 +2,9 @@
 created: '20110720162810'
 modified: '20110720162810'
 title: Twig
-type: text/html
-post_format: Link
-tags: Web php template
+tags: '[[Web]] [[Link]] [[php]] [[template]]'
 ---
 
-<a href="http://www.twig-project.org/">Twig</a>
+[[Twig|http://www.twig-project.org/]]
 
 The flexible, fast, and secure template engine for PHP

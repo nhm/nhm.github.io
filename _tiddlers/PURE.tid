@@ -2,12 +2,10 @@
 created: '20110514160431'
 modified: '20110514160431'
 title: PURE
-type: text/html
-post_format: Link
-tags: Web
+tags: '[[Web]] [[Link]]'
 ---
 
-<a href="http://beebole.com/pure/">PURE</a>
+[[PURE|http://beebole.com/pure/]]
 
 JavaScript Templates Engine
 

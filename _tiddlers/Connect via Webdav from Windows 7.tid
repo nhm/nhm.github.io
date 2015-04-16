@@ -2,10 +2,9 @@
 created: '20100406131549'
 modified: '20100406131549'
 title: Connect via Webdav from Windows 7
-type: text/html
-tags: Windows webdav
+tags: '[[Windows]] [[webdav]]'
 ---
 
 Try changing to Digest authentication, or use one of the standalone WebDAV clients
 
-via <a href="http://serverfault.com/questions/32098/connect-via-webdav-from-windows-7">Connect via Webdav from Windows 7? - Server Fault</a>.
+via [[Connect via Webdav from Windows 7? - Server Fault|http://serverfault.com/questions/32098/connect-via-webdav-from-windows-7]].

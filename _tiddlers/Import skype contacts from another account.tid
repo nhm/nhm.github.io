@@ -2,12 +2,19 @@
 created: '20110410091556'
 modified: '20110410091556'
 title: Import skype contacts from another account
-type: text/html
-tags: Uncategorized
+tags: '[[Uncategorized]]'
 ---
 
 From the desktop client, logged with your old account:
-<pre>Contacts &gt; Advanced &gt; Backup to file</pre>
+
+    
+    Contacts > Advanced > Backup to file
+
+
 Then, login with your new account:
-<pre>Contacts &gt; Advanced &gt;Restore from file</pre>
-via <a href="http://forum.skype.com/index.php?showtopic=72568">Import skype contacts from another account - Skype Community</a>.
+
+    
+    Contacts > Advanced >Restore from file
+
+
+via [[Import skype contacts from another account - Skype Community|http://forum.skype.com/index.php?showtopic=72568]].
