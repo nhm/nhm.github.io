@@ -106,7 +106,6 @@ class GithubAdaptor
         @_addFile file, callback, {message, content, sha: res.sha}
 
   loadTiddler: (title, callback) ->
-    return unless @_checkFile title, callback
     filename = encodeURI encodeURIComponent title
     file = "tiddlers/#{filename}.json"
     $.getJSON file, (tiddler) =>
