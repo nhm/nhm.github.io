@@ -1,14 +1,21 @@
 ---
-created: '20100125143750'
-modified: '20100125143750'
+created: 2010-01-25T14:37:50.000Z
+creator: jorgebg
+modified: 2015-04-16T18:17:52.515Z
 title: TerraTec Remote Control USB
-tags: '[[Computers]] [[remote control]] [[terratec]] [[usb]]'
+tags:
+  - Computers
+  - remote control
+  - terratec
+  - usb
+modifier: jorgebg
+type: text/vnd.tiddlywiki
 ---
-
-''Terratec ''''F''''ernbedienung+USB-Empf√§nge''
+''Terratec ''''F''''ernbedienung+USB-Empf‰nge''
 Also known as ''Cinergy 2400i DT remote control''
 
-[[[img[/assets/2505854_0b2681ab721.png]]|http://www.terratec.net/en/drivers-and-support.html]]
+[img[/assets/2505854_0b2681ab721.png]]
+http://www.terratec.net/en/drivers-and-support.html
 
 '' Downloads ''(via [[TerraTec - Driver & Support - TerraTec Drivers & Support|http://www.terratec.net/en/drivers-and-support.html]])
 
