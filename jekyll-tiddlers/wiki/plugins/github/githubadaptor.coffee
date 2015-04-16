@@ -107,7 +107,8 @@ class GithubAdaptor
 
   loadTiddler: (title, callback) ->
     return unless @_checkFile title, callback
-    file = "tiddlers/#{title}.json"
+    filename = encodeURI encodeURIComponent title
+    file = "tiddlers/#{filename}.json"
     $.getJSON file, (tiddler) ->
       callback null, tiddler
     .fail (err) -> callback err.statusText
