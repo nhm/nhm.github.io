@@ -1,0 +1,25 @@
+---
+created: '20110322151153'
+modified: '20110322151153'
+title: Recover a previous version
+type: text/html
+tags: Subversion
+---
+
+To revert to a previous version of your application (roll back changes) in Subversion, you merge the changes from your current revision back to the revision you want to revert to. So, for example, if you want to revert the trunk of your application from revision 73 to 68, you would do the following:
+
+svn merge --dry-run -r:73:68 http://my.repository.com/my/project/trunk
+
+svn merge -r:73:68 http://my.repository.com/my/project/trunk
+
+svn commit -m "Reverted to revision 68."
+
+Step 1 will perform a dry run and show you what the merge will produce. If you want to see exactly what changes will be applied, do a diff:
+
+svn diff -r:73:68 http://my.repository.com/my/project/trunk
+
+Step 2 actually performs the merge (you&amp;apos;d do this after you&amp;apos;re happy with the dry run). At this point, realize what is happening: Subversion is calculating the changes between revision 73 and revision 68 of the trunk and applying them to your working copy. For the majority of the time, you will thus want your working copy to be a fully updated copy of the revision you are reverting from (in this example, revision 73).
+
+Finally, since the merge happens on your local working copy, you need to commit it to the repository in Step 3.
+
+via <a href="http://aralbalkan.com/1381">Aral Balkan · How to revert (roll back) to a previous revision with Subversion</a>.

@@ -1,0 +1,11 @@
+---
+created: '20110807090208'
+modified: '20110807090208'
+title: DNSMasq Local Network
+type: text/html
+post_format: Link
+tags: dd-wrt routers
+---
+
+<a href="http://www.dd-wrt.com/wiki/index.php/DNSMasq_-_DNS_for_your_local_network_-_HOWTO">DNSMasq Local Network</a>
+<blockquote>So far I've learned of 3 ways to configure the DD-WRT, so that it will perform DNS for your local network. I don't claim to know which way is preferred by the developer(s) of the DD-WRT.</blockquote>

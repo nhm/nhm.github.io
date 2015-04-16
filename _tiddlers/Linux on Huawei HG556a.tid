@@ -1,0 +1,21 @@
+---
+created: '20110419092233'
+modified: '20110419092233'
+title: Linux on Huawei HG556a
+type: text/html
+tags: Computers HG556a Huawei linux MIPS
+---
+
+<a href="http://tails92.sepwich.com/files/vstation/">Linux on the Vodafone Station</a>
+
+This document describes how to get your own Linux/MIPS environment up and running on the Vodafone Station.
+
+&nbsp;
+
+Also you can try OpenWrt:<a href="http://wiki.openwrt.org/inbox/huawei.hg556a"> http://wiki.openwrt.org/inbox/huawei.hg556a</a>
+
+But not <a href="http://www.dd-wrt.com/">DD-WRT</a>
+
+&nbsp;
+
+<a href="http://www.huaweidevice.com/worldwide/productFeatures.do?pinfoId=2391&amp;directoryId=3860&amp;treeId=2872">Specifications of Huawei HG556a</a>

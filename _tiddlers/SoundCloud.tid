@@ -1,0 +1,16 @@
+---
+created: '20111014183517'
+modified: '20111014183517'
+title: SoundCloud
+type: text/html
+post_format: Link
+tags: Applications api service sounds
+---
+
+<a href="http://soundcloud.com/">SoundCloud </a>
+
+Share your sounds.
+
+Capture a voice, moment or music in seconds or upload audio you’ve already created.
+
+They have an <strong>API</strong> for developers.

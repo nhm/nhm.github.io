@@ -1,0 +1,14 @@
+---
+created: '20110909101621'
+modified: '20110909101621'
+title: awesome window manager
+type: text/html
+post_format: Link
+tags: Unix window manager
+---
+
+<a href="http://awesome.naquadah.org/">awesome window manager</a>
+
+awesome is a highly configurable, next generation framework window manager for X. It is very fast, extensible and licensed under the GNU GPLv2 license.
+
+It is primarly targeted at power users, developers and any people dealing with every day computing tasks and who want to have fine-grained control on theirs graphical environment.

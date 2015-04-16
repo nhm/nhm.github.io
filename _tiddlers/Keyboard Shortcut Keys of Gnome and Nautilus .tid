@@ -1,0 +1,83 @@
+---
+created: '20100406082818'
+modified: '20100406082818'
+title: 'Keyboard Shortcut Keys of Gnome and Nautilus '
+type: text/html
+tags: Debian
+---
+
+Gnome Desktop Keyboard Shortcuts
+
+Alt-F2 : Run Application Dialog
+
+Alt-F1 : Open Applications Menu
+
+Alt-F9 : Minimize Active Window
+
+Alt-Tab : Rotate Current Window Focus
+
+Ctrl+Alt+Left Arrow : Move Virtual Desktop Left
+
+Ctrl+Alt+Right Arrow : Move Virtual Desktop Right
+
+Ctrl+Alt+Shift+Left Arrow : Move Current Application Left
+
+Ctrl+Alt+Shift+Right Arrow : Move Current Application Right
+
+Ctrl+Alt+L : Lock Screen
+
+Ctrl+Alt+Del : Log Out
+
+Ctrl+Alt+Backspace : Restart Gnome (careful)
+
+Nautilus File Management
+
+Shift+Ctrl+N : Create New Folder
+
+Ctrl+T : Delete (to Trash)
+
+Alt+ENTER : File/Folder Properties
+
+Ctrl+1 : Toggle View As Icons
+
+Ctrl+2 : Toggle View As List
+
+Shift+Right Arrow : Open Directory (List View)
+
+Shift+Left Arrow : Close Directory (List View)
+
+Ctrl+S : Select Pattern [enter pattern]
+
+F2 : Rename File
+
+Ctrl+A : Select All
+
+Nautilus Navigation Shortcuts
+
+Ctrl+W : Close Window
+
+Ctrl+Shift+W : Close All Nautilus Windows
+
+Ctrl+R : Reload Nautilus Window
+
+Alt+Up Arrow : Open Parent
+
+Alt+Left Arrow : Back
+
+Alt+Right Arrow : Forward
+
+Alt+Home : Home Folder
+
+Ctrl+L : Location Bar
+
+F9 : Toggle Sidepane
+
+Ctrl+H : Show Hidden Files
+
+Ctrl++ : Zoom In
+
+Ctrl+- : Zoom Out
+
+Ctrl+0 : Normal Size
+
+via <a href="http://ubuntu-tutorials.com/2008/06/27/gnome-and-nautilus-keyboard-shortcut-keys/">Gnome and Nautilus Keyboard Shortcut Keys | Ubuntu Tutorials</a>.

@@ -1,0 +1,19 @@
+---
+created: '20100405115747'
+modified: '20100405115747'
+title: Getting the MySQL table structure in PHP - Stack Overflow
+type: text/html
+tags: MySQL
+---
+
+To get a list of columns for a table, use the DESCRIBE SQL statement.
+
+The syntax is as follows:
+
+<code lang="SQL">DESCRIBE TableName</code>
+
+To get a list of tables on the database, use this SQL statement:
+
+<code lang="SQL">SHOW TABLES</code>
+
+via <a href="http://stackoverflow.com/questions/468458/getting-the-mysql-table-structure-in-php">Getting the MySQL table structure in PHP - Stack Overflow</a>.

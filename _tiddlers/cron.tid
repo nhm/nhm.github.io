@@ -1,0 +1,64 @@
+---
+created: '20110805153917'
+modified: '20110805153917'
+title: cron
+type: text/html
+tags: Unix
+---
+
+<h3><span id="Predefined_scheduling_definitions" class="mw-headline">Schema </span></h3>
+<pre>*    *    *    *    *  command to be executed
+┬    ┬    ┬    ┬    ┬
+│    │    │    │    │
+│    │    │    │    │
+│    │    │    │    └───── day of week (0 - 7) (Sunday=0 or 7)
+│    │    │    └────────── month (1 - 12)
+│    │    └─────────────── day of month (1 - 31)
+│    └──────────────────── hour (0 - 23)
+└───────────────────────── min (0 - 59)
+
+</pre>
+<h3><span id="Predefined_scheduling_definitions" class="mw-headline">Predefined scheduling definitions</span></h3>
+There are several special predefined values which can be used to substitute the CRON expression.
+<table class="wikitable">
+<tbody>
+<tr>
+<th>Entry</th>
+<th>Description</th>
+<th>Equivalent To</th>
+</tr>
+<tr>
+<td><code>@yearly (or @annually)</code></td>
+<td>Run once a year, midnight, Jan. 1st</td>
+<td><code>0 0 1 1 *</code></td>
+</tr>
+<tr>
+<td><code>@monthly</code></td>
+<td>Run once a month, midnight, first of month</td>
+<td><code>0 0 1 * *</code></td>
+</tr>
+<tr>
+<td><code>@weekly</code></td>
+<td>Run once a week, midnight on Sunday</td>
+<td><code>0 0 * * 0</code></td>
+</tr>
+<tr>
+<td><code>@daily</code></td>
+<td>Run once a day, midnight</td>
+<td><code>0 0 * * *</code></td>
+</tr>
+<tr>
+<td><code>@hourly</code></td>
+<td>Run once an hour, beginning of hour</td>
+<td><code>0 * * * *</code></td>
+</tr>
+<tr>
+<td><code>@reboot</code></td>
+<td>Run at startup</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<pre></pre>
+via <a href="http://en.wikipedia.org/wiki/Cron">cron - Wikipedia, the free encyclopedia</a>.

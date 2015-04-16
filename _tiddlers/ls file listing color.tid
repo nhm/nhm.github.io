@@ -1,0 +1,11 @@
+---
+created: '20110506121614'
+modified: '20110506121614'
+title: ls file listing color
+type: text/html
+tags: Unix
+---
+
+export LS_COLORS=""
+
+via <a href="http://www.walkernews.net/2007/03/29/brighten-linux-ls-command-output-with-ls_colors/">Brighten Linux LS Command File Listing With LS_COLORS Trick</a>.

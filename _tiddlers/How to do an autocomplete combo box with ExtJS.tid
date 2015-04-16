@@ -1,0 +1,33 @@
+---
+created: '20100206221443'
+modified: '20100206221443'
+title: How to do an autocomplete combo box with ExtJS
+type: text/html
+tags: Web autocomplete extjs javascript
+---
+
+<pre class="js">{
+xtype:'combo', id: 'shoutoutsTags',
+fieldLabel: 'Tag',
+value: '',
+mode: 'local',
+width: 200,
+store: new Ext.data.JsonStore({
+url: 'get_data.php',
+fields: ['id', 'name'],
+root: 'tags',
+autoLoad: true
+}),
+displayField: 'name',
+valueField: 'id',
+forceSelection: true,
+triggerAction: 'all',
+
+hiddenName: 'mytag' //dont put it the same name as name filed value
+},
+</pre>
+via <a href="http://leoman730.blogspot.com/2009/06/extjs-auto-complete-of-combo-box.html">Enlightenment: Extjs AUTO complete of combo box</a>.
+
+Other ideas:
+<a href="http://webcartero02.uc3m.es/horde-3.0.9/services/go.php?url=http%3A%2F%2Fwww.fusioncube.net%2F%3Fp%3D222" target="_blank">http://www.fusioncube.net/?p=222</a>
+<a href="http://webcartero02.uc3m.es/horde-3.0.9/services/go.php?url=http%3A%2F%2Fwww.extjs.com%2Fforum%2Fshowthread.php%3Ft%3D19529%26highlight%3Ddwr" target="_blank">http://www.extjs.com/forum/showthread.php?t=19529&amp;highlight=dwr</a>

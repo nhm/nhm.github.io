@@ -1,0 +1,14 @@
+---
+created: '20100209053629'
+modified: '20100209053629'
+title: List directory excluding files
+type: text/html
+tags: Unix exclude grep ls
+---
+
+<pre>ls | grep -vE "(.html|.php)"</pre>
+<strong><em>Arguments</em></strong>
+<ul>
+	<li>-v, exclude matches</li>
+	<li>-E, extended regular expresions</li>
+</ul>

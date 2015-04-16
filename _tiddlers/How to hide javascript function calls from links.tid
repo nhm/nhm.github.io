@@ -1,0 +1,11 @@
+---
+created: '20100206220532'
+modified: '20100206220532'
+title: How to hide javascript function calls from links
+type: text/html
+tags: Web javascript void
+---
+
+<code lang="html">
+<a href="javascript:void(0)" onclick="alert('Welcome!')">Welcome message</a>
+</code>

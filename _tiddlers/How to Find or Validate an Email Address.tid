@@ -1,0 +1,10 @@
+---
+created: '20110805153645'
+modified: '20110805153645'
+title: How to Find or Validate an Email Address
+type: text/html
+tags: Regular Expressions
+---
+
+<pre class="brush:perl">^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$</pre>
+via <a href="http://www.regular-expressions.info/email.html">How to Find or Validate an Email Address</a>.

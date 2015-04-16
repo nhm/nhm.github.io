@@ -1,0 +1,103 @@
+---
+created: '20110322151154'
+modified: '20110322151154'
+title: Eclipse builds workspace too slow or never finishes
+type: text/html
+tags: Eclipse
+---
+
+Using the -clean argument
+
+The easiest way to fix up a dusty workspace is using the
+
+-clean
+
+command line argument to the
+
+eclipse.exe
+
+executable. Let&amp;apos;s
+
+take a look at what the Eclipse help docs tell us this command does:
+
+if set
+
+to "true", any cached data used by the OSGi framework and eclipse
+
+runtime will be wiped clean. This will clean the caches used to store
+
+bundle dependency resolution and eclipse extension registry data. Using
+
+this option will force eclipse to reinitialize these caches.
+
+The
+
+-clean
+
+argument is a
+
+one-time use flag, meaning after you have run Eclipse using it, you can
+
+remove it until you need it again. If you prefer to leave it set the
+
+only side effect of using it ever time are increased startup times
+
+(2-3x longer) which some folks do not mind.
+
+Now, back to the description above, this may not sound like much, I
+
+have to say that you would be
+
+amazed
+
+at what using
+
+-clean
+
+can fix
+
+up sometimes; some
+
+really random things. There are three easy ways you can go about using
+
+this argument:
+
+Edit the eclipse.ini file located in your &lt;Eclipse install
+
+directory&gt; and add it as the first argument on the first line.
+
+Edit the shortcut you use to start Eclipse and add it as the
+
+first argument.
+
+Create a batch or shell script that calls the Eclipse executable
+
+with the
+
+-clean
+
+argument. The
+
+advantage to this step is you can keep the script around and use it
+
+each time you want to clean out the workspace. You can name it
+
+something like eclipse-clean.bat (or eclipse-clean.sh).
+
+My preferred way to handle this is #1 only because I don&amp;apos;t do this
+
+very often. I open my
+
+eclipse.ini
+
+file with any editor, add
+
+-clean
+
+as the first argument, save the file and restart Eclipse. After this
+
+step is done I remove the argument from the file, save it and exit from
+
+my text editor.
+
+via <a href="http://www.eclipsezone.com/eclipse/forums/t61566.html">EclipseZone - Keeping Eclipse running clean ...</a>.

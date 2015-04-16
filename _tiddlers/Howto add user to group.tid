@@ -1,0 +1,19 @@
+---
+created: '20110322151151'
+modified: '20110322151151'
+title: Howto add user to group
+type: text/html
+tags: Unix
+---
+
+useradd example - Add a new user to secondary group
+
+Use useradd command to add new users to existing group (or create a new group and then add user). If group does not exist, create it. Syntax:
+
+useradd -G {group-name} username
+
+Create a new user called vivek and add it to group called developers. First login as a root user (make sure group developers exists), enter:
+
+# grep developers /etc/group
+
+via <a href="http://www.cyberciti.biz/faq/howto-linux-add-user-to-group/">Howto: Linux Add User To Group</a>.

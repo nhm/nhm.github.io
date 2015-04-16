@@ -1,0 +1,23 @@
+---
+created: '20100206215953'
+modified: '20100206215953'
+title: Synchronize a directory with rsync and SSH
+type: text/html
+tags: Unix rsync ssh
+---
+
+<strong>From remote to local</strong>
+<pre>rsync -avz -e ssh remoteuser@remotehost:/remote/dir /dest/dir/
+</pre>
+<em><strong>Arguments</strong></em>
+<code>-a</code>, --archive archive mode. It is a quick way of saying you want recursion and want to preserve everything.
+<code>-v</code>, --verbose increase verbosity
+<code>-z</code>, --compress compress file data
+[tip]
+The argument to -e can be a quoted string:
+<code>rsync -avz -e 'ssh -p 1234' remoteuser@remotehost:/remote/dir /dest/dir/</code>
+[/tip]
+<strong>From local to remote</strong>
+<pre>TODO
+</pre>
+via <a href="http://troy.jdmz.net/rsync/index.html">Using Rsync and SSH</a>,<a href="http://lists.samba.org/archive/rsync/2001-November/000497.html"> rsync over different SSH port</a>,<a href="http://www.fredshack.com/docs/rsync.html">Rsync tutorial</a>

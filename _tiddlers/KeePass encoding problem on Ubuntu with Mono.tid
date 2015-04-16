@@ -1,0 +1,13 @@
+---
+created: '20111029104750'
+modified: '20111029104750'
+title: KeePass encoding problem on Ubuntu with Mono
+type: text/html
+tags: Applications Ubuntu Mono
+---
+
+<a title="KeePass" href="http://keepass.info/">KeePass</a> encoding problem on Ubuntu with Mono
+
+Remove thai fonts to prevent problems with the encoding, according to <a>this</a>.
+<pre class="brush:shell">dpkg -P ttf-thai-tlwg</pre>
+Via <a href="http://sourceforge.net/tracker/index.php?func=detail&amp;aid=3046900&amp;group_id=95013&amp;atid=609908">SourceForge.net: KeePass Password Safe: Detail: 3046900 - Add Documentation to the FAQ</a>.

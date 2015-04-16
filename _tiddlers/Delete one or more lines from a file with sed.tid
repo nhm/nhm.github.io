@@ -1,0 +1,59 @@
+---
+created: '20100406091434'
+modified: '20100406091434'
+title: Delete one or more lines from a file with sed
+type: text/html
+tags: Unix sed
+---
+
+Removing one (or several) line (s) of a file:
+
+<strong>Syntax</strong>
+<pre class="brush:shell">sed '{[/]&lt;n&gt;|&lt;string&gt;|&lt;regex&gt;[/]}d' &lt;fileName&gt;
+sed '{[/]&lt;adr1&gt;[,&lt;adr2&gt;][/]d' &lt;fileName&gt;</pre>
+<ul>
+	<li> /.../=delimiters</li>
+	<li>n = line number</li>
+	<li>string = string found in in line</li>
+	<li>regex = regular expression corresponding to the searched pattern</li>
+	<li>addr = address of a line (number or pattern )</li>
+	<li>d = delete</li>
+</ul>
+<strong>Examples</strong>
+
+Remove the 3rd line:
+
+sed '3d' fileName.txt
+
+Removal of the line containing the string "awk":
+
+sed '/awk/d' filename.txt
+
+Remove the last line:
+
+sed '$d' filename.txt
+
+Remove all empty lines:
+
+sed '/^$/d' filename.txt
+sed '/./!d' filename.txt
+
+Remove line "matched" by a regular expression (by eliminating one containing digital characters (at least 1 digit) located at the end of the line).
+
+sed '/[0-9/][0-9]*$/d' filename.txt
+
+Removing the interval between lines 7 and 9.
+
+sed '7,9d' filename.txt
+
+Same operation but replacing the address by "parameters".
+
+sed '/-Start/,/-End/d' filename.txt
+
+The above examples are only change at the display of the file (stdout1= screen).
+
+For permanent changes to the old versions (&lt;4) use a temporary file for GNU sed use the "-i[suffix]":
+
+sed -i".bak" '3d' filename.txt
+
+via <a href="http://en.kioskea.net/faq/1451-sed-delete-one-or-more-lines-from-a-file">[Sed] Delete one or more lines from a file</a>.

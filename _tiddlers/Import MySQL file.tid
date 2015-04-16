@@ -1,0 +1,22 @@
+---
+created: '20100210011207'
+modified: '20100210011207'
+title: Import MySQL file
+type: text/html
+tags: MySQL Servers import
+---
+
+<strong>Export</strong>
+<span style="font-family: monospace;"> </span>
+<pre class="brush:shell">mysqldump -u username -p --all-databases &gt; dump.sql</pre>
+<strong>Import</strong>
+<span style="font-family: monospace;"> </span>
+<pre class="brush:shell">mysql -h host -u user -p database_name &lt; batch.sql</pre>
+&nbsp;
+
+If you have multiple files, first merge all in one sql file:
+<span style="font-family: monospace;"> </span>
+<pre class="brush:shell">find . -name "*.sql" | xargs cat &gt; batch.sql</pre>
+&nbsp;
+
+via <a href="http://dev.mysql.com/doc/refman/5.0/en/batch-mode.html">MySQL :: MySQL 5.0 Reference Manual :: 3.5 Using mysql in Batch Mode</a>.

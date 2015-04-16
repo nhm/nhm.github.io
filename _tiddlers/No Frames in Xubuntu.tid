@@ -1,0 +1,15 @@
+---
+created: '20110926165602'
+modified: '20110926165602'
+title: No Frames in Xubuntu
+type: text/html
+tags: Xubuntu
+---
+
+<strong>Problem</strong>
+none of my windows had frames; no maximize, no minimize, to system menu, to title, no re-size
+
+<strong>Solution</strong>
+<code>xfwm4</code> is not restored by the session manager. You can either start <code>xfwm4</code> with <code>Alt+f2</code> or clear the session cache (<code>rm -r ~/.cache/sessions</code>).
+
+via <a href="http://forum.xfce.org/viewtopic.php?id=6102">No Frames in Xubuntu (Page 1) / Desktop / Xfce Forums</a>.

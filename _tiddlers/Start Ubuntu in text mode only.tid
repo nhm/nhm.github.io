@@ -1,0 +1,25 @@
+---
+created: '20111206170008'
+modified: '20111206170008'
+title: Start Ubuntu in text mode only
+type: text/html
+tags: Ubuntu gui text
+---
+
+Edit the file <code>/etc/default/grub</code> as root
+
+Change the following lines:
+<code>
+GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”
+GRUB_CMDLINE_LINUX_DEFAULT=”"
+</code>
+to:
+<code>
+# GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”
+GRUB_CMDLINE_LINUX_DEFAULT=”text”
+</code>
+Execute the following commands:<code>
+</code>
+<pre class="brush:shell">sudo update-grub
+sudo reboot</pre>
+via <a href="http://www.vanimpe.eu/2007/11/26/start-ubuntu-in-text-mode-only/">start Ubuntu in text mode only | | vanimpe.euvanimpe.eu</a>.

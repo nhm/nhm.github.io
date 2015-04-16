@@ -1,0 +1,21 @@
+---
+created: '20110423153507'
+modified: '20110423153507'
+title: HTML arrow entities
+type: text/html
+tags: HTML
+---
+
+<pre>&amp;#8592; or &amp;larr;<span style="white-space: pre;"> </span>leftwards arrow<span style="white-space: pre;"> </span>← or ←</pre>
+<pre>&amp;#8593; or &amp;uarr;<span style="white-space: pre;"> </span>upwards arrow<span style="white-space: pre;"> </span>↑ or ↑</pre>
+<pre>&amp;#8594; or &amp;rarr;<span style="white-space: pre;"> </span>rightwards arrow<span style="white-space: pre;"> </span>→ or →</pre>
+<pre>&amp;#8595; or &amp;darr;<span style="white-space: pre;"> </span>downwards arrow<span style="white-space: pre;"> </span>↓ or ↓</pre>
+<pre>&amp;#8596; or &amp;harr;<span style="white-space: pre;"> </span>left right arrow<span style="white-space: pre;"> </span>↔ or ↔</pre>
+<pre>&amp;#8629; or &amp;crarr;<span style="white-space: pre;"> </span>downwards arrow with corner leftwards = carriage return<span style="white-space: pre;"> </span>↵ or ↵</pre>
+<pre>&amp;#8656; or &amp;lArr;<span style="white-space: pre;"> </span>leftwards double arrow<span style="white-space: pre;"> </span>⇐ or ⇐</pre>
+<pre>&amp;#8657; or &amp;uArr;<span style="white-space: pre;"> </span>upwards double arrow<span style="white-space: pre;"> </span>⇑ or ⇑</pre>
+<pre>&amp;#8658; or &amp;rArr;<span style="white-space: pre;"> </span>rightwards double arrow<span style="white-space: pre;"> </span>⇒ or ⇒</pre>
+<pre>&amp;#8659; or &amp;dArr;<span style="white-space: pre;"> </span>downwards double arrow<span style="white-space: pre;"> </span>⇓ or ⇓</pre>
+<pre>&amp;#8660; or &amp;hArr;<span style="white-space: pre;"> </span>left right double arrow<span style="white-space: pre;"> </span>⇔ or ⇔</pre>
+<pre>&amp;#8704; or &amp;forall;<span style="white-space: pre;"> </span>for all</pre>
+via <a href="http://snipplr.com/view.php?codeview&amp;id=2762">arrow entities - HTML - Snipplr Social Snippet Repository</a>.

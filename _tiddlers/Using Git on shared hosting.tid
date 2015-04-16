@@ -1,0 +1,20 @@
+---
+created: '20110720100216'
+modified: '20110720100216'
+title: Using Git on shared hosting
+type: text/html
+tags: Git shared hosting
+---
+
+<ol>
+	<li> Go download Git from http://git-scm.com/download.  At the time of this posting, the latest version can be found at http://kernel.org/pub/software/scm/git/git-1.6.1.tar.gz</li>
+	<li>SSH into your 1&amp;1 account</li>
+	<li>“wget http://kernel.org/pub/software/scm/git/git-1.6.1.tar.gz”, and that will download the package</li>
+	<li>“tar -xvzf git-1.6.1.tar.gz” which will decompress the gzip file into a subdirectory</li>
+	<li>“cd git*” to change into the subdirctory</li>
+	<li>“make” to begin compiling the source.  You won’t be able to do “make install” because you likely won’t have permission to install anything to the system.</li>
+	<li>Now Git is ready to rock with the exception of needing to add it to your $PATH.  This can be done by typing “echo ‘PATH=$PATH:~/git-1.6.1/’ &gt; ~/.profile”</li>
+</ol>
+&nbsp;
+
+via <a href="http://derek.io/blog/2009/using-git-on-11-or-any-shared-hosting/">Using Git on 1&amp;1 (or any ‘shared’) hosting | Derek Gathright</a>.

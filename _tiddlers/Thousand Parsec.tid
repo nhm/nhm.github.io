@@ -1,0 +1,21 @@
+---
+created: '20110419115459'
+modified: '20110419115459'
+title: Thousand Parsec
+type: text/html
+post_format: Link
+tags: Development framework python
+---
+
+<a href="http://www.thousandparsec.net/">Thousand Parsec</a>
+
+Thousand Parsec is a bunch of games based on a common framework for building turn based space empire building games. Some of the games, such as our first demo game MiniSec, are developed by the Thousand Parsec developers themselves. In the near future we hope that other developers will create their own games using Thousand Parsec framework.
+
+Some examples of games which Thousand Parsec draws ideas from are, Stars!, VGA Planets, Master of Orion and Galactic Civilizations. These games are often called 4 X's from the main phases found in the games, eXplore, eXpand, eXploit and eXterminate. If you haven't heard of them, other games which are a bit similar include, Civilisation, Hero's of Might and Magic and Starcraft.
+
+Thousand Parsec includes everything you need for
+
+play any of the currently running games,
+set up your own game using already designed games, and
+building your own space empire building game.
+As Thousand Parsec is a rather large project it is easy to get confused when first starting out. This page has instructions on how to get started with Thousand Parsec.

@@ -1,0 +1,12 @@
+---
+created: '20110419084456'
+modified: '20110419084456'
+title: Unison
+type: text/html
+post_format: Link
+tags: Applications synchronization
+---
+
+<a href="http://www.cis.upenn.edu/~bcpierce/unison/">http://www.cis.upenn.edu/~bcpierce/unison/</a>
+
+Unison        is a file-synchronization tool for Unix and Windows. It allows two replicas        of a collection of files and directories to be stored on different hosts        (or different disks on the same host), modified separately, and then brought        up to date by propagating the changes in each replica to the other.

@@ -1,0 +1,19 @@
+---
+created: '20110807085632'
+modified: '20110807085632'
+title: Backup Manager
+type: text/html
+post_format: Link
+tags: Servers
+---
+
+<a href="http://www.backup-manager.org/">Backup Manager</a>
+Versatile Command Line Backup Tool for GNU/Linux - Backup Manager
+
+&nbsp;
+
+Backup Manager is a command line backup tool for GNU/Linux, designed to help you make daily archives of your file system. Written in bash and perl, it can make archives in lots of open formats (tar, gzip, bzip2, lzma, dar, zip) and provides lots of interesting features (such as network exports or CD/DVD automated-burning).
+
+The program is designed to be as easy to use as possible and is popular with desktop users and sysadmins. The whole backup process is defined in one full-documented configuration file which needs no more than 5 minutes to tune for your needs. It just works.
+
+Archives are kept for a given number of days and the upload system can use ftp or scp to transfer the generated archives to a list of remote hosts. Gettext is used for internationalization.

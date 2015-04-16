@@ -1,0 +1,11 @@
+---
+created: '20110720162413'
+modified: '20110720162413'
+title: Store the RSA key fingerprint in a Netbeans Remote Project
+type: text/html
+tags: NetBeans confirm key remote rsa
+---
+
+You can create an empty file and set it as the Known Hosts File in the Manage Remote Connections window. The next time you tell NetBeans to connect anyway, it will save the fingerprint in that file and stop bothering you. I think it's safe to assume that if the key changes, you will be prompted again.
+
+via <a href="http://stackoverflow.com/questions/3328930/i-netbeans-can-i-somehow-store-the-rsa-key-fingerprint-of-the-remote-server-or-n">php - I NetBeans, can I somehow store the RSA key fingerprint of the remote server or not have NetBeans confirm the key before taking action? - Stack Overflow</a>.

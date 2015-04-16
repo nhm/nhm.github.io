@@ -1,0 +1,12 @@
+---
+created: '20110806232314'
+modified: '20110806232314'
+title: Postmark
+type: text/html
+post_format: Link
+tags: Email Delivery
+---
+
+<a href="http://postmarkapp.com/">Postmark</a>
+
+Email delivery for web apps

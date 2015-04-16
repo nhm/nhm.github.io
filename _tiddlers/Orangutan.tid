@@ -1,0 +1,12 @@
+---
+created: '20110409091323'
+modified: '20110409091323'
+title: Orangutan
+type: text/html
+post_format: Link
+tags: Uncategorized
+---
+
+<a href="http://www.softjourn.com/projects-orangutan">Orangutan</a>.
+
+Orangutan is a Jabber/XMPP bot written in Perl. The main goal when developing Orangutan was to implement natural language interface for time tracking. The idea resulted into a flexible, extendable bot platform with a unique architecture allowing to ask questions, build dialogues, act on events, remind, suggest etc. The Orangutan natural language interface appeared to allow much more than usual computer user interfaces.

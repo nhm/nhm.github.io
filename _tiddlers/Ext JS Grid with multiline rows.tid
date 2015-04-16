@@ -1,0 +1,17 @@
+---
+created: '20100405122707'
+modified: '20100405122707'
+title: Ext JS Grid with multiline rows
+type: text/html
+tags: Web extjs javascript
+---
+
+Add the following CSS rules:
+
+<pre class="brush:css">.x-grid3-cell-inner, .x-grid3-hd-inner {
+overflow:hidden;
+padding:3px 3px 3px 5px;
+white-space:normal;
+}</pre>
+
+via <a href="http://www.extjs.com/forum/showthread.php?t=57291">How can i create a grid with multiline rows ? - Ext JS Forums</a>.

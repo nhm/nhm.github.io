@@ -1,0 +1,24 @@
+---
+created: '20111127081639'
+modified: '20111127081639'
+title: 'Installation error: “Couldn’t install on USB storage or SD card” in  Android '
+type: text/html
+tags: Android android error
+---
+
+I got an error when installing/updating some apps:
+
+<strong>In spanish:</strong>
+<blockquote>"No se ha podido realizar la instalacion en la unidad de almacenamiento usb ni en la tarjeta sd"</blockquote>
+<strong>In english:</strong>
+<blockquote>“Couldn’t install on USB storage or SD card”</blockquote>
+&nbsp;
+
+<strong>The solution:</strong>
+
+1. Mount it on your desktop as an USB drive
+
+2. Delete the file <code>/sdcard/.android_secure</code>
+
+<code></code>
+via <a href="http://technology-headlines.com/2011/05/12/installation-error-%E2%80%9Ccouldnt-install-on-usb-storage-or-sd-card%E2%80%9D-solution-for-android/">Installation error: “Couldn’t install on USB storage or SD card” solution for Android « Technology-Headlines</a>.

@@ -1,0 +1,11 @@
+---
+created: '20110530073932'
+modified: '20110530073932'
+title: HeidiSQL
+type: text/html
+tags: Applications MySQL
+---
+
+<a href="http://www.heidisql.com/">HeidiSQL</a>
+
+HeidiSQL is a lightweight, Windows based interface for MySQL databases. It enables you to browse and edit data, create and edit tables, views, procedures, triggers and scheduled events. Also, you can export structure and data either to SQL file, clipboard or to other servers.

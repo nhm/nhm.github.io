@@ -1,0 +1,53 @@
+---
+created: '20110407194827'
+modified: '20110407194827'
+title: Mysql User creation with permissions
+type: text/html
+tags: MySQL create grant user
+---
+
+<span style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 10px;">
+<div class="headline_area" style="margin-top: 0px; margin-right: 0px; margin-bottom: 2.2em; margin-left: 0px; padding: 0px;">
+<h1 class="entry-title" style="font-weight: normal; color: #111111; font-size: 2.6em; line-height: 1.308em; padding: 0px; margin: 0px;"><span style="font-size: 14px; line-height: 22px;">When you try to access MySQL database server from client such as mysql or even programming language such as php or perl you need a user account. MySQL has sophisticated user management system that controls who can access server and from which client system. It uses special tables in mysql database. In order to create a new user account you need a MySQL root account password.</span></h1>
+</div>
+<div class="format_text entry-content" style="font-size: 1.4em; line-height: 1.571em; color: #111111; padding: 0px; margin: 0px;">
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.571em; margin-left: 0px; padding: 0px;">Next you need to use the <strong style="padding: 0px; margin: 0px;">GRANT</strong> SQL command to set up the MySQL user account.</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.571em; margin-left: 0px; padding: 0px;">Finally, use the account's name and password to make connections to the MySQL server.</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.571em; margin-left: 0px; padding: 0px;">Please note that <strong style="padding: 0px; margin: 0px;">MySQL user accounts are different from UNIX/Linux login accounts</strong>. For example, the MySQL root user and the Linux/Unix root user are separate and have nothing to do with each other, even though the username is the same in each case.</p>
+
+<h3 style="margin-top: 1.833em; margin-right: 0px; margin-bottom: 0.611em; margin-left: 0px; font-weight: normal; font-size: 1.286em; line-height: 1.222em; padding: 0px;">Procedure for setting up a MySQL user account</h3>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.571em; margin-left: 0px; padding: 0px;">Login in as mysql root user (at shell prompt type following command:):</p>
+
+<pre style="padding-top: 0.667em; padding-right: 0.917em; padding-bottom: 0.667em; padding-left: 0.917em; margin-top: 0px; margin-right: 0px; margin-bottom: 1.833em; margin-left: 0px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; overflow-x: auto; overflow-y: auto; clear: both; font-family: Consolas, 'Andale Mono', Monaco, Courier, 'Courier New', Verdana, sans-serif; font-size: 0.857em; line-height: 1.5em; background-position: initial initial; background-repeat: initial initial; border: 1px solid #dddddd;">$ mysql -u root -p</pre>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.571em; margin-left: 0px; padding: 0px;">OR</p>
+
+<pre style="padding-top: 0.667em; padding-right: 0.917em; padding-bottom: 0.667em; padding-left: 0.917em; margin-top: 0px; margin-right: 0px; margin-bottom: 1.833em; margin-left: 0px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; overflow-x: auto; overflow-y: auto; clear: both; font-family: Consolas, 'Andale Mono', Monaco, Courier, 'Courier New', Verdana, sans-serif; font-size: 0.857em; line-height: 1.5em; background-position: initial initial; background-repeat: initial initial; border: 1px solid #dddddd;">$ mysql -u root -h myserver-sever.com -p</pre>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.571em; margin-left: 0px; padding: 0px;">Create a new mysql database called demo</p>
+
+<pre style="padding-top: 0.667em; padding-right: 0.917em; padding-bottom: 0.667em; padding-left: 0.917em; margin-top: 0px; margin-right: 0px; margin-bottom: 1.833em; margin-left: 0px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; overflow-x: auto; overflow-y: auto; clear: both; font-family: Consolas, 'Andale Mono', Monaco, Courier, 'Courier New', Verdana, sans-serif; font-size: 0.857em; line-height: 1.5em; background-position: initial initial; background-repeat: initial initial; border: 1px solid #dddddd;">mysql&gt; CREATE DATABASE demo;</pre>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.571em; margin-left: 0px; padding: 0px;">Create a new user called user1 for database demo</p>
+
+<pre style="padding-top: 0.667em; padding-right: 0.917em; padding-bottom: 0.667em; padding-left: 0.917em; margin-top: 0px; margin-right: 0px; margin-bottom: 1.833em; margin-left: 0px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; overflow-x: auto; overflow-y: auto; clear: both; font-family: Consolas, 'Andale Mono', Monaco, Courier, 'Courier New', Verdana, sans-serif; font-size: 0.857em; line-height: 1.5em; background-position: initial initial; background-repeat: initial initial; border: 1px solid #dddddd;">mysql&gt; GRANT ALL ON demo.* TO user1@localhost IDENTIFIED BY 'mypassword';</pre>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.571em; margin-left: 0px; padding: 0px;">Note: GRANT ALL means all privileges i.e. user is permitted do anything. She can read, modify or delete data, but only on tables in the demo database. She cannot access any other database.</p>
+
+<h4 style="font-weight: bold; font-size: 1em; padding: 0px; margin: 0px;">How do I connect to MySQL server using user1 account?</h4>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.571em; margin-left: 0px; padding: 0px;">User <em style="padding: 0px; margin: 0px;">user1</em> can connect to mysql server demo database using following command:</p>
+
+<pre style="padding-top: 0.667em; padding-right: 0.917em; padding-bottom: 0.667em; padding-left: 0.917em; margin-top: 0px; margin-right: 0px; margin-bottom: 1.833em; margin-left: 0px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; overflow-x: auto; overflow-y: auto; clear: both; font-family: Consolas, 'Andale Mono', Monaco, Courier, 'Courier New', Verdana, sans-serif; font-size: 0.857em; line-height: 1.5em; background-position: initial initial; background-repeat: initial initial; border: 1px solid #dddddd;">$ mysql -u user1 -p demo</pre>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.571em; margin-left: 0px; padding: 0px;">OR</p>
+
+<pre style="padding-top: 0.667em; padding-right: 0.917em; padding-bottom: 0.667em; padding-left: 0.917em; margin-top: 0px; margin-right: 0px; margin-bottom: 1.833em; margin-left: 0px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; overflow-x: auto; overflow-y: auto; clear: both; font-family: Consolas, 'Andale Mono', Monaco, Courier, 'Courier New', Verdana, sans-serif; font-size: 0.857em; line-height: 1.5em; background-position: initial initial; background-repeat: initial initial; border: 1px solid #dddddd;">$ mysql -u user1 -h mysql.server.com -p demo</pre>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.571em; margin-left: 0px; padding: 0px;">Where,</p>
+
+<ul style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.571em; margin-left: 1.571em; list-style-type: square; list-style-position: initial; list-style-image: initial; padding: 0px;">
+	<li style="padding: 0px; margin: 0px;">-u user1: MySQL Username</li>
+	<li style="padding: 0px; margin: 0px;">-h : MySQL server name (default is localhost)</li>
+	<li style="padding: 0px; margin: 0px;">-p : Prompt for password</li>
+	<li style="padding: 0px; margin: 0px;">demo: demo is name of mysql database (optional)</li>
+</ul>
+</div>
+</span>
+
+&nbsp;
+
+Via <a href="http://www.cyberciti.biz/faq/mysql-user-creation/">Mysql user creation – setting up a MySQL new user account</a>.

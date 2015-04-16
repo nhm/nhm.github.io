@@ -1,0 +1,12 @@
+---
+created: '20111014210103'
+modified: '20111014210103'
+title: Pro Git
+type: text/html
+post_format: Link
+tags: Git Resources
+---
+
+<a href="http://progit.org/">Pro Git</a>
+
+This is the website for the Pro Git book, written by Scott Chacon and published by Apress. Here you can find the full content of the book, a blog with tips and updates about Git and the book and open source projects related to Git or referenced in the book.

@@ -1,0 +1,13 @@
+---
+created: '20110419021009'
+modified: '20110419021009'
+title: Killing zombie process
+type: text/html
+tags: Unix kill zombie
+---
+
+First, find them:
+<pre>ps aux | grep -w Z</pre>
+Then try to kill them with the PID:
+<pre>kill -9 &lt;PID&gt;</pre>
+via <a href="http://www.cyberciti.biz/tips/killing-zombie-process.html">Killing zombie process</a>.

@@ -1,0 +1,23 @@
+---
+created: '20100309122439'
+modified: '20100309122439'
+title: Eclipse color preferences
+type: text/html
+tags: Eclipse
+---
+
+Essentially there are two files we want to copy or overwrite:
+
+[workspace].metadata.pluginsorg.eclipse.core.runtime.settingsorg.eclipse.jdt.ui.prefs
+
+[workspace].metadata.pluginsorg.eclipse.core.runtime.settingsorg.eclipse.ui.editors.prefs
+
+where,
+
+org.eclipse.jdt.ui.prefs = Syntax Coloring
+
+org.eclipse.ui.editors.prefs = Text Editors
+
+I converted anonfunc&amp;apos;s themes from http://eclipsecolorthemes.jottit.com/ into the new format. Also I created my own :)
+
+via <a href="http://stackoverflow.com/questions/96981/color-themes-for-eclipse">Color Themes for Eclipse? - Stack Overflow</a>.

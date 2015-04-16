@@ -1,0 +1,15 @@
+---
+created: '20110420083230'
+modified: '20110420083230'
+title: 'Google Analytics: hours of the day'
+type: text/html
+tags: Google
+---
+
+<div>In order to check the visits of the hours of a single day:</div>
+<ol>
+	<li>Click on "Visits"</li>
+	<li>Just below the date range, there is a "Clock" icon.</li>
+	<li>Click the icon to get the hourly distribution.</li>
+</ol>
+via <a href="http://forums.digitalpoint.com/showthread.php?t=1053067">Google Analytics: hours of the day</a>.

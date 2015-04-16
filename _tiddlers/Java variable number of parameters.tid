@@ -1,0 +1,16 @@
+---
+created: '20100317130803'
+modified: '20100317130803'
+title: Java variable number of parameters
+type: text/html
+tags: Java multiple number parameters variable
+---
+
+<pre class="java">
+public static void myVarArgMethod(<strong>String... strings</strong>){
+
+for(String element : strings)
+System.out.println(element);
+
+}
+</pre>

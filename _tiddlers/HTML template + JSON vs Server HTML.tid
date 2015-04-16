@@ -1,0 +1,23 @@
+---
+created: '20110720160741'
+modified: '20110720160741'
+title: HTML template + JSON vs Server HTML
+type: text/html
+tags: Web performance
+---
+
+<strong>Request JSON and render in JS, or request the entire HTML?</strong>
+<blockquote><strong>JSON is the way to go</strong>. <strong>Network can be huge bottleneck</strong> while javascript is fast at handling things. The greatest difference will be on <strong>slow connections</strong>. And it definitely worth the parsing. New browsers offer <strong>native JSON</strong>, so it should be <strong>crazy fast</strong>.
+
+One more thing to consider: <strong>innerHTML has a lot of <a rel="nofollow" href="http://www.google.com/#hl=en&amp;source=hp&amp;q=innerhtml+bug">bugs</a></strong> (tables, forms, etc.). In those cases you have do <strong>a lot of overhead</strong> in order to get it work <strong>cross-browser</strong>. Problems may arise unexpectedly, which makes your application less stable.
+
+JSON, however, let you decide if you want to use innerHTML or DOM methods according to the content. This is another huge win.
+<p style="text-align: left;">via <a href="http://stackoverflow.com/questions/3175241/performance-wise-request-json-and-render-in-js-or-request-the-entire-html">php - Performance-wise: request JSON and render in JS, or request the entire HTML? - Stack Overflow</a>.</p>
+</blockquote>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; font-size: 14px; vertical-align: baseline; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; clear: both; word-wrap: break-word; background-position: initial initial; background-repeat: initial initial; padding: 0px; border: 0px initial initial;">&nbsp;</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; font-size: 14px; vertical-align: baseline; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; clear: both; word-wrap: break-word; background-position: initial initial; background-repeat: initial initial; padding: 0px; border: 0px initial initial;"><strong>HTML template + JSON vs Server HTML</strong></p>
+
+<blockquote>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; font-size: 14px; vertical-align: baseline; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; clear: both; word-wrap: break-word; background-position: initial initial; background-repeat: initial initial; padding: 0px; border: 0px initial initial;">One advantage I see with 'processing json to create markup' on client side is decrease in size of the data being transferred.</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; font-size: 14px; vertical-align: baseline; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; clear: both; word-wrap: break-word; background-position: initial initial; background-repeat: initial initial; padding: 0px; border: 0px initial initial;">The answer to your question would depend on what kind of application you are developing. Say if you have an application where you display a list of (constantly updating) status messages on a page; sending the html would be heavier as it would contain all markup for laying out the status messages. Instead, a json object would be light enough and can be processed easily on client side into required markup.</p>
+via <a href="http://stackoverflow.com/questions/1775797/html-template-json-vs-server-html">HTML template + JSON vs Server HTML - Stack Overflow</a>.</blockquote>

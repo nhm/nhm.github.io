@@ -1,0 +1,17 @@
+---
+created: '20100317114100'
+modified: '20100317114100'
+title: Redirecting eclipse console output to file
+type: text/html
+tags: Eclipse console file output
+---
+
+Pull up the "Debug" or "Run" dialogs where you configured your main class.
+
+Select the java application configuration you want to run.
+
+On the right hand side of the screen, select the "Common" tab. Check the "File" checkbox and mention a physical path+filename in the input textbox. The filename should be like this:
+
+<pre>${workspace_loc}/ficheros2010/data/log.txt</pre>
+
+via <a href="http://itnow.blogspot.com/2006/09/redirecting-eclipse-console-output-to.html">ITNow: Redirecting eclipse console output to log file</a>.

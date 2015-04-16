@@ -1,0 +1,14 @@
+---
+created: '20110423145526'
+modified: '20110423145526'
+title: epesi framework
+type: text/html
+post_format: Link
+tags: Frameworks Web
+---
+
+<a href="http://www.epesi.org/index.php?title=Main_Page">epesi framework</a>
+
+epesi framework was developed by Telaxus LLC to provide an environment to quickly build database driven web applications. The framework is based on PHP server side scripting language and AdoDB as database abstraction layer. It integrates many libraries and custom created modules to make the development process quick and easy.
+
+The framework was released under MIT open source license. It includes fully functional CRM modules (addressbook, calendar, tasks, phone calls, notes) as well as Project/Bugtracker. It can be downloaded from Sourceforge

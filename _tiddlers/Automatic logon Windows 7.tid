@@ -1,0 +1,17 @@
+---
+created: '20110702093938'
+modified: '20110702093938'
+title: Automatic logon Windows 7
+type: text/html
+tags: Windows automatically login
+---
+
+<ol>
+	<li>Press the keys <strong>Windows + R</strong> on your keyboard to launch the <em>Run</em> dialog box.</li>
+	<li>Type in <strong>control userpasswords2</strong> and press Enter.</li>
+	<li><strong>Uncheck</strong> the option <em>Users must enter a user name and password to use this computer</em> and click <em>OK</em></li>
+	<li>You will then be prompted to enter the current password and confirm it.</li>
+</ol>
+After doing so, you will no longer be prompted to enter your password upon login.
+
+via <a href="http://channel9.msdn.com/Blogs/coolstuff/Tip-Auto-Login-Your-Windows-7-User-Account">Tip: Auto-Login Your Windows 7 User Account | Cool Stuff | Channel 9</a>.

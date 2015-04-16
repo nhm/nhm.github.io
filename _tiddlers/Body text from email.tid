@@ -1,0 +1,12 @@
+---
+created: '20110818092744'
+modified: '20110818092744'
+title: Body text from email
+type: text/html
+tags: PHP imap
+---
+
+<pre class="brush:php">$bodyText = imap_fetchbody($connection,$emailnumber,1.2);
+if(!strlen($bodyText)&gt;0)
+    $bodyText = imap_fetchbody($connection,$emailnumber,1);</pre>
+via <a href="http://stackoverflow.com/questions/4272551/extract-body-text-from-email-php">imap - Extract body text from Email PHP - Stack Overflow</a>.

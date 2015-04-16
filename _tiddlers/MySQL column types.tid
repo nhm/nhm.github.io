@@ -1,0 +1,11 @@
+---
+created: '20100309101139'
+modified: '20100309101139'
+title: MySQL column types
+type: text/html
+tags: MySQL
+---
+
+<a title="VARCHAR" href="http://dev.mysql.com/doc/refman/4.1/en/char.html">VARCHAR</a>
+
+Max length: (2^16) - 1 = 65 535

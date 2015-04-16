@@ -1,0 +1,217 @@
+---
+created: '20110514170332'
+modified: '20110514170332'
+title: Configuración del servidor DNS en Debian con BIND
+type: text/html
+tags: Debian bind DNS server
+---
+
+<span style="font-family: Verdana, Arial, Helvetica, serif; font-size: 14px; line-height: 18px;">
+<h2 style="color: #206020; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; font-family: Verdana, Arial, Helvetica, serif; font-weight: normal; background-position: initial initial; background-repeat: initial initial;"><a name="Introducción">Introducción</a></h2>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;"><em>Berkeley Internet Name Domain</em> (BIND) es una implementación del protocolo <em>Domain Name System</em> (DNS), ampliamente usado para resolver nombres y números IP en Internet.</p>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Si el computador está permanentemente conectado a Internet, puede resultar ventajoso instalar BIND para mantener una tabla local con todos los nombres que resuelve el DNS autoritativo de la red.</p>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Ingresa a root, por ejemplo, corriendo un "<tt style="color: #602020;">Terminal de &lt;Root&gt;</tt>" en el menú "<tt style="color: #602020;">Aplicaciones/Accesorios</tt>" o, en el mismo menú, un "<tt style="color: #602020;">Terminal</tt>" y luego el comando <tt style="color: #602020;">su</tt> (super user).</p>
+
+<h2 style="color: #206020; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; font-family: Verdana, Arial, Helvetica, serif; font-weight: normal; background-position: initial initial; background-repeat: initial initial;"><a name="Configuración de un DNS local">Configuración de un DNS local</a></h2>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Instala el paquete <tt style="color: #602020;">bind9</tt>,</p>
+
+<div class="block" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #f8f8ff; color: #000000; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; padding-left: 1em; background-position: initial initial; background-repeat: initial initial; margin: 1em; border: 1px solid #909090;">
+<pre># apt-get install bind9</pre>
+</div>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Edita el archivo <tt style="color: #602020;">/etc/bind/named.conf.options</tt>,</p>
+
+<div class="block" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #f8f8ff; color: #000000; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; padding-left: 1em; background-position: initial initial; background-repeat: initial initial; margin: 1em; border: 1px solid #909090;">
+<pre># nano /etc/bind/named.conf.options</pre>
+</div>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">para que lea,</p>
+
+<div class="block" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #f8f8ff; color: #000000; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; padding-left: 1em; background-position: initial initial; background-repeat: initial initial; margin: 1em; border: 1px solid #909090;">
+<pre>options {
+        directory "/var/cache/bind";
+
+        // If there is a firewall between you and nameservers you want
+        // to talk to, you may need to fix the firewall to allow multiple
+        // ports to talk.  See http://www.kb.cert.org/vuls/id/800113
+
+        // If your ISP provided one or more IP addresses for stable
+        // nameservers, you probably want to use them as forwarders.
+        // Uncomment the following block, and insert the addresses replacing
+        // the all-0's placeholder.
+
+        forwarders {
+                100.10.0.3;
+                100.10.0.7;
+        };
+
+        auth-nxdomain no;    # conform to RFC1035
+        listen-on-v6 { any; };
+};</pre>
+</div>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">En <tt style="color: #602020;">forwarders</tt> van los números IP de los servidores de nombre (DNS) de la red, los mismos del archivo <tt style="color: #602020;">/etc/resolv.conf</tt> indicados en el instructivo <tt style="color: #602020;">nameserver</tt>.</p>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Desinstala el paquete <tt style="color: #602020;">resolvconf</tt>, si es que esta instalado,</p>
+
+<div class="block" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #f8f8ff; color: #000000; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; padding-left: 1em; background-position: initial initial; background-repeat: initial initial; margin: 1em; border: 1px solid #909090;">
+<pre># apt-get --purge remove resolvconf</pre>
+</div>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Edita <tt style="color: #602020;">/etc/resolv.conf</tt> y modifícalo para que lea,</p>
+
+<div class="block" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #f8f8ff; color: #000000; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; padding-left: 1em; background-position: initial initial; background-repeat: initial initial; margin: 1em; border: 1px solid #909090;">
+<pre>search mi.dominio
+nameserver 127.0.0.1</pre>
+</div>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">En donde <tt style="color: #602020;">search</tt> indica el dominio de la red. Si la red no tiene dominio, borra el instructivo <tt style="color: #602020;">search</tt>.</p>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Reinicia el <em>daemon</em> de BIND (<tt style="color: #602020;">named</tt>) con,</p>
+
+<div class="block" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #f8f8ff; color: #000000; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; padding-left: 1em; background-position: initial initial; background-repeat: initial initial; margin: 1em; border: 1px solid #909090;">
+<pre># /etc/init.d/bind9 restart</pre>
+</div>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">y luego reinicia la red,</p>
+
+<div class="block" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #f8f8ff; color: #000000; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; padding-left: 1em; background-position: initial initial; background-repeat: initial initial; margin: 1em; border: 1px solid #909090;">
+<pre># /etc/init.d/networking restart</pre>
+</div>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Lo que hemos hecho es transformar a <tt style="color: #602020;">localhost</tt> (127.0.0.1) en el servidor de nombres, que a través de BIND hace requerimientos a los DNS de la red.</p>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Para ver el servidor DNS local en acción da el comando,</p>
+
+<div class="block" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #f8f8ff; color: #000000; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; padding-left: 1em; background-position: initial initial; background-repeat: initial initial; margin: 1em; border: 1px solid #909090;">
+<pre>$ dig www.debian.org</pre>
+</div>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Retornará a la pantalla la consulta al DNS autoritativo,</p>
+
+<div class="block" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #f8f8ff; color: #000000; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; padding-left: 1em; background-position: initial initial; background-repeat: initial initial; margin: 1em; border: 1px solid #909090;">
+<pre>$ dig www.debian.org
+
+; &lt;&lt;&gt;&gt; DiG 9.7.2-P3 &lt;&lt;&gt;&gt; www.debian.org
+;; global options:  +cmd
+;; Got answer:
+;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 47296
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.debian.org.			IN	A
+
+;; ANSWER SECTION:
+www.debian.org.		300	IN	A	128.31.0.51
+www.debian.org.		300	IN	A	206.12.19.7
+
+;; Query time: 804 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: Sun Mar 20 09:37:36 2011
+;; MSG SIZE  rcvd: 158</pre>
+</div>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">La primera consulta tardó 804 milisegundos (<tt style="color: #602020;">Query time</tt>). Repetir el mismo requerimiento será prácticamente instantáneo. El servidor ahora consulta su propia tabla, en dónde existe guardada una entrada con la información sobre <tt style="color: #602020;">www.debian.org</tt>,</p>
+
+<div class="block" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #f8f8ff; color: #000000; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; padding-left: 1em; background-position: initial initial; background-repeat: initial initial; margin: 1em; border: 1px solid #909090;">
+<pre>$ dig www.debian.org
+
+; &lt;&lt;&gt;&gt; DiG 9.7.2-P3 &lt;&lt;&gt;&gt; www.debian.org
+;; global options: +cmd
+;; Got answer:
+;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 35228
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.debian.org.			IN	A
+
+;; ANSWER SECTION:
+www.debian.org.		299	IN	A	128.31.0.51
+www.debian.org.		299	IN	A	206.12.19.7
+
+;; Query time: 15 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: Sun Mar 20 09:41:49 2011
+;; MSG SIZE  rcvd: 64</pre>
+</div>
+<h2 style="color: #206020; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; font-family: Verdana, Arial, Helvetica, serif; font-weight: normal; background-position: initial initial; background-repeat: initial initial;"><a name="Configuración de un DNS primario">Configuración de un DNS primario</a></h2>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">La configuración avanzada de BIND aquí presentada es apta para un servidor Debian con número IP estático y conectado permanentemente a Internet.</p>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Para definir un nuevo dominio y hacer que el servidor actúe como su DNS autoritativo, necesitas primero haber comprado un dominio en un registro de nombres de dominio (NIC), por ejemplo en <a class="link" style="color: #3333cc; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; text-decoration: none; background-position: initial initial; background-repeat: initial initial;" href="http://www.nic.cl/">NIC Chile</a><a name="REFiNtErNaLNOTE1"> </a><sup><a class="link" style="color: #3333cc; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; text-decoration: none; background-position: initial initial; background-repeat: initial initial;" href="http://man-es.debianchile.org/bind.html#iNtErNaLNOTE1">1</a></sup>, y definir el servidor de nombres primario del nuevo dominio con el número IP y FQDN del servidor BIND.</p>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Vamos a usar de ejemplo el dominio <tt style="color: #602020;">ficticio.cl</tt>.</p>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Edita <tt style="color: #602020;">/etc/bind/named.conf.local</tt> y agrega al final del archivo,</p>
+
+<div class="block" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #f8f8ff; color: #000000; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; padding-left: 1em; background-position: initial initial; background-repeat: initial initial; margin: 1em; border: 1px solid #909090;">
+<pre>zone "ficticio.cl" {
+        type master;
+        file "/etc/bind/db.ficticio.cl";
+        allow-query { any; };
+};</pre>
+</div>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Crea el archivo <tt style="color: #602020;">/etc/bind/db.ficticio.cl</tt> y agrega,</p>
+
+<div class="block" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #f8f8ff; color: #000000; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; padding-left: 1em; background-position: initial initial; background-repeat: initial initial; margin: 1em; border: 1px solid #909090;">
+<pre>;
+; archivo BIND para zona ficticio.cl
+;
+$TTL    604800
+@       IN      SOA     ficticio.cl. hostmaster.ficticio.cl. (
+                1       ; Serial
+                           1200         ; Refresh
+                            300         ; Retry
+                        2419200         ; Expire
+                           1200 )       ; Negative Cache TTL
+
+ficticio.cl.    IN      NS      ns1.ficticio.cl.
+ficticio.cl.    IN      NS      ns2.ficticio.cl.
+ficticio.cl.    IN      MX      1 ns1.ficticio.cl.
+ficticio.cl.    IN      MX      2 ns2.ficticio.cl.
+
+localhost       IN      A       127.0.0.1
+ficticio.cl.    IN      A       100.10.10.10
+
+ns1             IN      A       100.10.10.10
+ns2             IN      A       100.10.20.20
+
+www             IN      A       100.10.10.10
+smtp            IN      A       100.10.10.11</pre>
+</div>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">El instructivo <tt style="color: #602020;">TTL</tt> (Time To Live) indica la validez (en segundos) de la consulta, tras la cual deberá ejecutarse una actualización. 604800 segundos equivalen a una semana.</p>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">El número <tt style="color: #602020;">Serial</tt> debería incrementarse cada vez que se modifica la zona. El campo <tt style="color: #602020;">Refresh</tt> indica el intervalo de tiempo que los DNS secundarios deben refrescar la información del archivo de zona si han habido cambios (20 munutos). <tt style="color: #602020;">Retry</tt> indica el intervalo de tiempo que los DNS secundarios deben reintentar actualizar la información si el DNS primario no responde (5 minutos). <tt style="color: #602020;">Expire</tt> indica el tiempo que el DNS secundario expira como servidor de nombres de la zona en caso el DNS primario no responda a requerimiento de actualización (4 semanas). <tt style="color: #602020;">Negative Cache TTL</tt> indica el TTL en caso de una consulta con respuesta negativa (20 minutos).</p>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Modifica todas las ocurrencias de <tt style="color: #602020;">ficticio.cl</tt> por el dominio pertinente. Todas ellas deben terminar con un punto. <tt style="color: #602020;">ns1</tt> debe llevar el número IP del DNS primario, es decir, el servidor BIND. <tt style="color: #602020;">ns2</tt> define el DNS secundario. Puede ser el mismo servidor BIND, otro, o el que habilita el registro de nombres de dominio, generalmente en forma gratuita, por ejemplo, <tt style="color: #602020;">secundario.nic.cl</tt>.</p>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">En este ejemplo, <tt style="color: #602020;">ficticio.cl</tt> y <tt style="color: #602020;">www.ficticio.cl</tt> apuntan al mismo número IP. Esto no debe necesariamente ser así.</p>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Si tienes un <a class="link" style="color: #3333cc; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; text-decoration: none; background-position: initial initial; background-repeat: initial initial;" href="http://man-es.debianchile.org/cortafuego.html">cortafuego</a>, habilita el puerto 53 UDP y TCP hacia requerimientos por la interfase que va a servir BIND.</p>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Reinicia <tt style="color: #602020;">named</tt> con,</p>
+
+<div class="block" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #f8f8ff; color: #000000; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; padding-left: 1em; background-position: initial initial; background-repeat: initial initial; margin: 1em; border: 1px solid #909090;">
+<pre># /etc/init.d/bind9 restart</pre>
+</div>
+<h2 style="color: #206020; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; font-family: Verdana, Arial, Helvetica, serif; font-weight: normal; background-position: initial initial; background-repeat: initial initial;"><a name="Configuración de un DNS secundario">Configuración de un DNS secundario</a></h2>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">El DNS primario debe apuntar <tt style="color: #602020;">ns2</tt> al servidor BIND que va a actuar de DNS secundario.</p>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Edita <tt style="color: #602020;">named.conf.local</tt> en el DNS primario y agrega a la zona el instructivo <tt style="color: #602020;">allow-transfer</tt>,</p>
+
+<div class="block" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #f8f8ff; color: #000000; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; padding-left: 1em; background-position: initial initial; background-repeat: initial initial; margin: 1em; border: 1px solid #909090;">
+<pre>zone "ficticio.cl" {
+        type master;
+        file "/etc/bind/db.ficticio.cl";
+        allow-query { any; };
+        allow-transfer { 100.10.20.20; };
+};</pre>
+</div>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">en donde <tt style="color: #602020;">allow-transfer</tt> debe llevar el número IP del servidor DNS secundario indicado en el archivo de zona.</p>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Edita <tt style="color: #602020;">named.conf.local</tt> en el DNS secundario y agrega al final del archivo,</p>
+
+<div class="block" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #f8f8ff; color: #000000; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; padding-left: 1em; background-position: initial initial; background-repeat: initial initial; margin: 1em; border: 1px solid #909090;">
+<pre>zone "ficticio.cl" {
+        type slave;
+        file "/etc/bind/db.ficticio.cl";
+        allow-query { any; };
+        masters { 100.10.10.10; };
+};</pre>
+</div>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">en donde <tt style="color: #602020;">masters</tt> debe llevar el número IP del servidor DNS primario indicado en el archivo de zona.</p>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Si tienes un <a class="link" style="color: #3333cc; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; text-decoration: none; background-position: initial initial; background-repeat: initial initial;" href="http://man-es.debianchile.org/cortafuego.html">cortafuego</a>, habilita el puerto 53 UDP y TCP hacia requerimientos por la interfase que va a servir BIND.</p>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">El usuario de sistema <tt style="color: #602020;">bind</tt> en el DNS secundario necesita permisos para modificar archivos en el directorio <tt style="color: #602020;">/etc/bind</tt>,</p>
+
+<div class="block" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #f8f8ff; color: #000000; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; padding-left: 1em; background-position: initial initial; background-repeat: initial initial; margin: 1em; border: 1px solid #909090;">
+<pre># chmod g+ws /etc/bind</pre>
+</div>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Reinicia <tt style="color: #602020;">named</tt> con,</p>
+
+<div class="block" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #f8f8ff; color: #000000; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; padding-left: 1em; background-position: initial initial; background-repeat: initial initial; margin: 1em; border: 1px solid #909090;">
+<pre># /etc/init.d/bind9 restart</pre>
+</div>
+<p class="Body" style="text-indent: 0em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;">Reinicia <tt style="color: #602020;">named</tt> en el servidor DNS primario también. El DNS primario enviará un requerimiento de actualización al DNS secundario y éste creará una copia exacta del archivo de zona <tt style="color: #602020;">/etc/bind/db.ficticio.cl</tt>.</p>
+
+</span>
+
+&nbsp;
+
+Via <a href="http://man-es.debianchile.org/bind.html">Configuración del servidor DNS en Debian (BIND)</a>

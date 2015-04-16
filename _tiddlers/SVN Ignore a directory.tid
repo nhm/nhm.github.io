@@ -1,0 +1,21 @@
+---
+created: '20100219100643'
+modified: '20100219100643'
+title: SVN Ignore a directory
+type: text/html
+tags: Subversion ignore
+---
+
+to set the ignore property
+
+&gt; svn propset svn:ignore cache .
+
+where svn:ignore is the name of the property youre setting, cache is the value of the property, and . is the directory youre setting this property on. It should be the parent directory of the cache directory that needs the property.to check what properties are set
+
+&gt; svn proplist
+
+Properties on .:  svn:ignoreto see the value of svn:ignore
+
+&gt; svn propget svn:ignorecache
+
+via <a href="http://stackoverflow.com/questions/116074/how-to-ignore-a-directory-with-svn">How to ignore a directory with SVN? - Stack Overflow</a>.

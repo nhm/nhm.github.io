@@ -1,0 +1,11 @@
+---
+created: '20110322151150'
+modified: '20110322151150'
+title: How to list users
+type: text/html
+tags: Unix
+---
+
+cat /etc/passwd |grep "/home" |cut -d: -f1
+
+via <a href="http://www.linuxquestions.org/linux/answers/Networking/How_to_list_all_your_USERs">How to list all your USERs.. - LinuxQuestions.org</a>.

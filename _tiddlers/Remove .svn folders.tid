@@ -1,0 +1,11 @@
+---
+created: '20100218095206'
+modified: '20100218095206'
+title: Remove .svn folders
+type: text/html
+tags: Subversion
+---
+
+<code>find www -name .svn | xargs rm -r</code>
+
+via <a href="http://blog.gungfu.de/archives/2005/09/25/using-rsync-together-with-subversion-part-ii/">DenkZEIT : Using rsync together with Subversion – Part II</a>.

@@ -1,0 +1,12 @@
+---
+created: '20111203125420'
+modified: '20111203125420'
+title: Arkestra
+type: text/html
+post_format: Link
+tags: Django Django CMS python semantic
+---
+
+<a href="https://github.com/evildmp/Arkestra">Arkestra</a>
+
+Arkestra extends Django CMS to provide an intelligent semantic web publishing system for organisations and institutions

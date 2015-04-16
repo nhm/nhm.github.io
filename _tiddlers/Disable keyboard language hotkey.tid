@@ -1,0 +1,18 @@
+---
+created: '20110704064741'
+modified: '20110704064741'
+title: Disable keyboard language hotkey
+type: text/html
+tags: Windows hotkey keyboard language layout shortcut
+---
+
+To change this, go into:
+<ol>
+	<li>Control Panel</li>
+	<li>Regional Settings</li>
+	<li>Languages</li>
+	<li>Details</li>
+</ol>
+There is a button that allows you to configure the shortcuts to switch languages.
+
+via <a href="http://superuser.com/questions/66561/how-to-avoid-keyboard-layout-automatically-changing-on-windows">How to avoid keyboard layout automatically changing on windows - Super User</a>.
